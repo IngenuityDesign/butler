@@ -107,11 +107,19 @@ html.touch {
 /* BEYOND MOBILE
 -----------------------------------------------*/
 
+.clearSpacing() {
+	margin: 0;
+	padding: 0;
+}
 @fullWidth: 1200px;
 
 @media screen and (min-width: 48em) {
-	body {
-		max-width: auto;
+	body, html {
+		max-width: 100%;
 		width: 100%;
+		.clearSpacing();
+	}
+	body {
+	
 	}
 }
