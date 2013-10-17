@@ -34,7 +34,7 @@
 	  
 			{.section website}
 	  
-			  <h1 data-content-field="site-title">
+			  <div id="logo">
 				<a href="/">
 				  {.section logoImageUrl}
 				   <img src="{logoImageUrl}?format=original" alt="{siteTitle}" />
@@ -42,18 +42,33 @@
 					{siteTitle}
 				  {.end}
 				</a>
-			  </h1>
+			  </div>
 			  
 			  <!--SITE TAGLINE-->
 	  
-			  {.section siteTagLine}<p>{@}</p>{.end}
+			  <!--{.section siteTagLine}<p>{@}</p>{.end}-->
 	  
 			{.end}
-	  
-			<!--MAIN NAVIGATION-->
+	 			<div id="right">
+					<div class="top">
+						Make An Appointment
+					</div>
+					<div class="bottom">
+						<div class="left">
+							{item|social-button}
+							{item|address}
+							{item|phone}
+						</div>
+						<div class="right">
+							
+						</div>
+					</div>
+				</div> 
+
 	  
 	  		</div>
 		  </header>
+ 			<!--MAIN NAVIGATION-->
 	  	  <squarespace:navigation navigationId="mainNav" template="navigation" />
 		  <!--CONTENT INJECTION POINT-->
 	  
