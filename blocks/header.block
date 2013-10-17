@@ -29,7 +29,7 @@
       <!--HEADER-->
   
 		<header id="header">
-	  
+	  		<div class="wrapper">
 			<!--SITE TITLE OR LOGO-->
 	  
 			{.section website}
@@ -53,7 +53,7 @@
 			<!--MAIN NAVIGATION-->
 	  
 			<squarespace:navigation navigationId="mainNav" template="navigation" />
-	  
+	  		</div>
 		  </header>
 	  
 		  <!--CONTENT INJECTION POINT-->
