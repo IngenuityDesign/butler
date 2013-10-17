@@ -1,1 +1,1 @@
-{squarespace.main-content}
+<article id="main-content">{squarespace.main-content}</article>
