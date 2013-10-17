@@ -49,15 +49,13 @@
 			  <!--{.section siteTagLine}<p>{@}</p>{.end}-->
 	  
 			{.end}
-	 			<div id="right">
+	 			<div class="right">
 					<div class="top">
 						Make An Appointment
 					</div>
 					<div class="bottom">
 						<div class="left">
-							{item|social-button}
-							{item|address}
-							{item|phone}
+							
 						</div>
 						<div class="right">
 							
