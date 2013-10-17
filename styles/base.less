@@ -110,7 +110,9 @@ html.touch {
 @defaultFontSize: 15px;
 @headerHeight: 200px;
 .boxShadow (...) {
-	
+	-webkit-box-shadow: @arguments rgba(204, 202, 202, 0.75);
+	-moz-box-shadow:    @arguments rgba(204, 202, 202, 0.75);
+	box-shadow:         @arguments rgba(204, 202, 202, 0.75);
 }
 .clearSpacing() {
 	margin: 0;
@@ -145,6 +147,7 @@ html.touch {
 			width: 380px;
 			height: @headerHeight;
 			.top {
+				.boxShadow(-1px; 3px; 5px );
 				width: 165px;
 				height: 58px;
 				padding: 14px 20px 0;
@@ -152,7 +155,7 @@ html.touch {
 				font-size: 19px;
 				color: white;
 				background-color: @orange;
-				.boxShadow(-1px; 3px; 5px; );
+				
 			}
 			.bottom {
 				padding-top: 17px;
