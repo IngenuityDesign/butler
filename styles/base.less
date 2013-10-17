@@ -112,6 +112,10 @@ html.touch {
 	padding: 0;
 }
 @fullWidth: 1200px;
+.fullWidthCenter() {
+	width: @fullWidth;
+	margin: 0 auto;
+}
 
 @media screen and (min-width: 48em) {
 	body, html {
@@ -122,4 +126,9 @@ html.touch {
 	body {
 	
 	}
+	header {height: 200px;}
+	header .wrapper {
+		.fullWidthCenter();
+	}
+	
 }
