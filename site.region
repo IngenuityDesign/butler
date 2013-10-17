@@ -1,5 +1,1 @@
-{@|apply header.block}
-    
 {squarespace.main-content}
-
-{@|apply footer.block}
