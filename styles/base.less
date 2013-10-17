@@ -108,6 +108,7 @@ html.touch {
 -----------------------------------------------*/
 @fullWidth: 1070px;
 @navHeight: 48px;
+@defaultFontSize: 15px;
 
 .clearSpacing() {
 	margin: 0;
@@ -140,6 +141,20 @@ html.touch {
 		.fullWidthCenter;
 		display: block;
 		height: @navHeight;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			height: @navHeight;
+			a {
+				color: white;
+				text-transform: uppercase;
+				font-size: @defaultFontSize;
+				padding: 14px 45px;
+				height: @navHeight;
+				&:link, &:visited {text-decoration: none;}
+				&:hover, &:focus, &:active {background-color: @orange;}
+			}
+		}
 	}
 	
 }
