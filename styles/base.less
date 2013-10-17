@@ -106,12 +106,14 @@ html.touch {
 
 /* BEYOND MOBILE
 -----------------------------------------------*/
+@fullWidth: 1070px;
+@navHeight: 48px;
 
 .clearSpacing() {
 	margin: 0;
 	padding: 0;
 }
-@fullWidth: 1200px;
+
 .fullWidthCenter() {
 	width: @fullWidth;
 	margin: 0 auto;
@@ -129,6 +131,15 @@ html.touch {
 	header {height: 200px;}
 	header .wrapper {
 		.fullWidthCenter();
+	}
+	#main-navigation {
+		width: 100%;
+		background-color: @blue;
+	}
+	#main-navigation ul {
+		.fullWidthCenter;
+		display: block;
+		height: @navHeight;
 	}
 	
 }
