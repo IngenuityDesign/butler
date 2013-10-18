@@ -7,7 +7,7 @@
     <footer id="footer">
 		<div class="left">
 		{.section website}
-			<div class="website-title">{title}</div>
+			<div class="website-title">{siteTitle}</div>
 			
 			{.section location}
 			<div class="address">
@@ -16,6 +16,8 @@
 			</div>
 			{.end}
 			
+		{.end}
+		{.section websiteSettings}
 			<div class="phone">
 			T: {contactPhoneNumber}<br>
 			F: 714.680.9501
