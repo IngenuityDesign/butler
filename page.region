@@ -1,0 +1,9 @@
+<section id="content">
+		  
+	<div class="wrapper">  
+
+		<article id="main-content">{squarespace.main-content}</article>
+
+	</div><!--.wrapper-->
+
+</section> <!-- #content -->
