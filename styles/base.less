@@ -203,7 +203,7 @@ html.touch {
 		background-position: center 76px;
 		background-image: url(/assets/wave.png);
 		.wrapper {
-			.fullWidthCenter;
+			.fullWidthCenter();
 			min-height: 700px;
 			padding-top: 76px;
 			
@@ -245,7 +245,31 @@ html.touch {
 			font-size: 22px;
 		}
 	}
-		
+	
+	footer {
+		padding-top: 60px;
+		background-repeat: no-repeat;
+		background-position: center 0;
+		background-image: url(/assets/bottom.png);
+		.wrapper {
+			.fullWidthCenter();
+			height: 186px;
+			.left, .right, .center {float: left; font-size: 12px; color: @teal;
+				ul {
+					.clearSpacing();
+					list-style-type: none;
+					li {
+						.clearSpacing();
+						list-style-type: none;
+					}
+				}
+			}
+			.left {width: 475px; }
+			.right { width: 115px;}
+			.center { width: 475px;}
+		}
+	}
+	
 }
 
 /*
