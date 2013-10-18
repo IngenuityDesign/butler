@@ -36,7 +36,7 @@
 				<squarespace:navigation navigationId="footNavLeft" template="navigation-f">
 			</div>
 			<div class="menu">
-				<div class="title"><squarespace:block-field id="sub-main-content" columns="3" lock-layout="true" /></div>
+				<div class="title"><squarespace:block-field id="main-title-2" columns="3" lock-layout="true" /></div>
 				<squarespace:navigation navigationId="footNavRight" template="navigation-f">
 			</div>
 		</div>
