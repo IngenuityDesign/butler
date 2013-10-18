@@ -204,14 +204,12 @@ html.touch {
 		color: white;
 		background-repeat: no-repeat;
 		background-position: center 76px;
-		&.home {background-image: url(/assets/wave.png);}
+		&.home {background-image: url(/assets/wave.png); .wrapper {padding-top: 76px;}}
 		.wrapper {
 			.fullWidthCenter();
 			min-height: 700px;
-			padding-top: 76px;
-			
 		}
-		
+		&.page .wrapper {padding-top: 20px;}
 		&.page article {
 			
 			padding: 10px 0;
