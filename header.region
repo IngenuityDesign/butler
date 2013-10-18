@@ -38,7 +38,9 @@
 					</div> <!-- .top -->
 					<div class="bottom">
 						<div class="left">
-							
+							{website.location.addressLine1}
+							{website.location.addressLine2}
+							{website.contactPhoneNumber}
 						</div> <!-- .left -->
 						<div class="right">
 							
