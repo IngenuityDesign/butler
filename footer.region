@@ -5,7 +5,16 @@
     <!--FOOTER WITH OPEN BLOCK FIELD-->
 
     <footer id="footer">
-      <squarespace:block-field id="footerBlocks" columns="12" />
+		<div class="left">
+		
+		</div>
+		<div class="center">
+			<squarespace:navigation navigationId="footerNav" template="navigation">
+		</div>
+      <div class="right">
+		  <!--MAIN NAVIGATION REPEAT-->
+	  	  <squarespace:navigation navigationId="mainNav" template="navigation" />
+	  </div>
     </footer>
 
     <!--INJECTION POINT FOR TRACKING SCRIPTS AND USER CONTENT FROM THE CODE INJECTION TAB-->
