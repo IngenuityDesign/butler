@@ -1,12 +1,13 @@
 <section id="content" class="home">
 		  
 	<div class="wrapper">  
-		<div class="inner-wrapper">
-		<article id="main-content">
-		<div class="box">{squarespace.main-content}</div>
-		</article>
+		<div class="sub-inner-wrapper">
+			<div class="inner-wrapper">
+				<article id="main-content">
+					<div class="box">{squarespace.main-content}</div>
+				</article>
+			</div>
 		</div>
-		
 		<div class="bottom"></div>
 		
 		<section id="under-main-content">
