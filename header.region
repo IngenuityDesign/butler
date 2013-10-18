@@ -85,7 +85,4 @@
  		  <!--MAIN NAVIGATION-->
 	  	  <squarespace:navigation navigationId="mainNav" template="navigation" />
 		  <!--CONTENT INJECTION POINT-->
-	  
-		  <section id="content">
-		  
-		  	<div class="wrapper">   
+	   
