@@ -2,7 +2,13 @@
 		  
 	<div class="wrapper">  
 
-		<article id="main-content">{squarespace.main-content}</article>
+		<article id="main-content"{.main-image?} class="hasThumbnail"{.end}>{squarespace.main-content}</article>
+		
+		{.main-image?}
+		<figure>
+			<img src="{fullURL}?format=312w" />
+		</figure>
+		{.end}
 
 	</div><!--.wrapper-->
 
