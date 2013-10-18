@@ -2,7 +2,7 @@
 		  
 	<div class="wrapper">  
 
-		<article id="main-content">{squarespace.main-content}</article>
+		<article id="main-content">{main-content}</article>
 
 	</div><!--.wrapper-->
 
