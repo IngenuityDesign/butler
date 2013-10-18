@@ -67,7 +67,7 @@
 	  
 	  		</div>
 		  </header>
- 			<!--MAIN NAVIGATION-->
+ 		  <!--MAIN NAVIGATION-->
 	  	  <squarespace:navigation navigationId="mainNav" template="navigation" />
 		  <!--CONTENT INJECTION POINT-->
 	  
