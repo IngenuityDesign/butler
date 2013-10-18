@@ -38,12 +38,23 @@
 					</div> <!-- .top -->
 					<div class="bottom">
 						<div class="left">
-							{website.location.addressLine1}
-							{website.location.addressLine2}
-							{website.contactPhoneNumber}
+						{.section website location}
+							<div class="address">
+							{addressLine1}<br>
+							{addressLine2}
+							</div>
+						{.end}
+							<div class="social">
+								<img src="/assets/social.png" alt="">
+							</div>
+						
 						</div> <!-- .left -->
 						<div class="right">
-							
+							{.section websiteSettings}
+							<div class="phone">
+							{contactPhoneNumber}
+							</div>
+							{.end}
 						</div> <!-- .right -->
 					</div> <!-- .bottom -->
 				</div>  <!-- .right -->
