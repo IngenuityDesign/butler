@@ -5,45 +5,47 @@
     <!--FOOTER WITH OPEN BLOCK FIELD-->
 
     <footer id="footer">
-		<div class="left">
-		{.section website}
-			<div class="website-title">{siteTitle}</div>
-			
-			{.section location}
-			<div class="address">
-				{addressLine1}<br>
-				{addressLine2}
-			</div>
+		<div class="wrapper">
+			<div class="left">
+			{.section website}
+				<div class="website-title">{siteTitle}</div>
+				
+				{.section location}
+				<div class="address">
+					{addressLine1}<br>
+					{addressLine2}
+				</div>
+				{.end}
+				
 			{.end}
-			
-		{.end}
-		{.section websiteSettings}
-			<div class="phone">
-			T: {contactPhoneNumber}<br>
-			F: 714.680.9501
+			{.section websiteSettings}
+				<div class="phone">
+				T: {contactPhoneNumber}<br>
+				F: 714.680.9501
+				</div>
+				
+				<div class="email">
+				{#email}
+				</div>
+				
+				
+			{.end}
 			</div>
-			
-			<div class="email">
-			{#email}
+			<div class="center">
+				<div class="menu">
+					<div class="title"><squarespace:block-field id="menu-title-1" columns="3" lock-layout="true" /></div>
+					<squarespace:navigation navigationId="footNavLeft" template="navigation-f">
+				</div>
+				<div class="menu">
+					<div class="title"><squarespace:block-field id="main-title-2" columns="3" lock-layout="true" /></div>
+					<squarespace:navigation navigationId="footNavRight" template="navigation-f">
+				</div>
 			</div>
-			
-			
-		{.end}
-		</div>
-		<div class="center">
-			<div class="menu">
-				<div class="title"><squarespace:block-field id="menu-title-1" columns="3" lock-layout="true" /></div>
-				<squarespace:navigation navigationId="footNavLeft" template="navigation-f">
-			</div>
-			<div class="menu">
-				<div class="title"><squarespace:block-field id="main-title-2" columns="3" lock-layout="true" /></div>
-				<squarespace:navigation navigationId="footNavRight" template="navigation-f">
-			</div>
-		</div>
-      <div class="right">
-		  <!--MAIN NAVIGATION REPEAT-->
-	  	  <squarespace:navigation navigationId="mainNav" template="navigation-f" />
-	  </div>
+		  <div class="right">
+			  <!--MAIN NAVIGATION REPEAT-->
+			  <squarespace:navigation navigationId="mainNav" template="navigation-f" />
+		  </div>
+		</div> <!--.wrapper-->
     </footer>
 
     <!--INJECTION POINT FOR TRACKING SCRIPTS AND USER CONTENT FROM THE CODE INJECTION TAB-->
