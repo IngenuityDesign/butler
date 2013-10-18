@@ -208,13 +208,13 @@ html.touch {
 		&.home {padding-top: 76px;}
 		&.home .wrapper {
 			background-image: url(/assets/wave.png);
-			height: 310px;
 			background-color: white;
 			position: relative;
 			z-index: 1;
+			min-height: 700px;
 			.inner-wrapper {
+				height: 310px;
 				.fullWidthCenter();
-				min-height: 700px;
 				
 			}
 			.bottom {
@@ -222,6 +222,7 @@ html.touch {
 				background-image: url(/assets/bottom-invert.png);
 				background-position: center bottom;
 				background-repeat: no-repeat;
+				z-index: 100;
 			}
 		}
 		&.page {padding-top: 20px;}
