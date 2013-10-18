@@ -204,12 +204,22 @@ html.touch {
 		color: white;
 		background-repeat: no-repeat;
 		background-position: center 76px;
-		&.home {background-image: url(/assets/wave.png); .wrapper {padding-top: 76px;}}
-		.wrapper {
-			.fullWidthCenter();
-			min-height: 700px;
+		&.home {padding-top: 76px;}
+		&.home .wrapper {
+		background-image: url(/assets/wave.png); height: 310px; background-color: white; position: relative; z-index:
+			.inner-wrapper {
+				.fullWidthCenter();
+				min-height: 700px;
+				
+			}
+			.bottom {
+				position: absolute; bottom: 0; .fullWidthCenter();
+				background-image: url(/assets/bottom-invert.png);
+				background-position: center bottom;
+				background-repeat: no-repeat;
+			}
 		}
-		&.page .wrapper {padding-top: 20px;}
+		&.page {padding-top: 20px;}
 		figure {
 			float: right; width: 315px;
 			margin-top: 90px;
@@ -323,6 +333,5 @@ html.touch {
 	
 }
 
-/*
+/*Customize form blocks*/
 
-*/
