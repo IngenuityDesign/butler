@@ -2,9 +2,9 @@
 		  
 	<div class="wrapper">  
 
-		<article id="main-content"{.collection}{main-image?} class="hasThumbnail"{.end}{.end}>{squarespace.main-content}</article>
+		<article id="main-content"{.section collection}{main-image?} class="hasThumbnail"{.end}{.end}>{squarespace.main-content}</article>
 		
-		{.collection}
+		{.section collection}
 		{main-image?}
 		<figure>
 			<img src="{fullURL}?format=312w" />
