@@ -6,10 +6,10 @@
 
     <footer id="footer">
 		<div class="left">
-		{.website}
+		{.section website}
 			<div class="website-title">{title}</div>
 			
-			{.location}
+			{.section location}
 			<div class="address">
 				{addressLine1}<br>
 				{addressLine2}
