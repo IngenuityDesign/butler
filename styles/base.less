@@ -261,6 +261,11 @@ html.touch {
 					li {
 						.clearSpacing();
 						list-style-type: none;
+						a {
+							text-decoration: none;
+							color: @teal;
+							&:link, &:visited {color:@teal;}
+						}
 					}
 				}
 			}
@@ -270,11 +275,19 @@ html.touch {
 				.phone {padding-bottom: 10px;}
 				.email {}
 			}
-			.right { width: 115px;}
+			.right { width: 115px;
+				nav ul {
+					.clearSpacing();
+					li {
+						padding-top: 2px;
+					}
+				}
+			}
 			.center { width: 475px;
 				.menu {
 				.title {padding-bottom: 12px;}
 				nav ul {
+					.clearSpacing();
 					padding-bottom: 12px;
 					li {
 						padding-top: 2px;
