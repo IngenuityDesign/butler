@@ -6,9 +6,27 @@
 
     <footer id="footer">
 		<div class="left">
-			{title}
+		{.website}
+			<div class="website-title">{title}</div>
 			
-			{email}
+			{.location}
+			<div class="address">
+				{addressLine1}<br>
+				{addressLine2}
+			</div>
+			{.end}
+			
+			<div class="phone">
+			T: {contactPhoneNumber}<br>
+			F: 714.680.9501
+			</div>
+			
+			<div class="email">
+			{#email}
+			</div>
+			
+			
+		{.end}
 		</div>
 		<div class="center">
 			<squarespace:navigation navigationId="footerNav" template="navigation-f">
