@@ -31,7 +31,14 @@
 		{.end}
 		</div>
 		<div class="center">
-			<squarespace:navigation navigationId="footerNav" template="navigation-f">
+			<div class="menu">
+				<div class="title"><squarespace:block-field id="menu-title-1" columns="3" lock-layout="true" /></div>
+				<squarespace:navigation navigationId="footNavLeft" template="navigation-f">
+			</div>
+			<div class="menu">
+				<div class="title"><squarespace:block-field id="sub-main-content" columns="3" lock-layout="true" /></div>
+				<squarespace:navigation navigationId="footNavRight" template="navigation-f">
+			</div>
 		</div>
       <div class="right">
 		  <!--MAIN NAVIGATION REPEAT-->
