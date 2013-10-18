@@ -54,7 +54,7 @@
 						<div class="right">
 							{.section websiteSettings}
 							<div class="phone">
-							{contactPhoneNumber}
+							P: {contactPhoneNumber}
 							</div>
 							{.end}
 						</div> <!-- .right -->
