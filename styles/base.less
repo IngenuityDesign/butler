@@ -205,16 +205,21 @@ html.touch {
 		color: white;
 		&.home {padding-top: 76px;}
 		&.home .wrapper {
-			background-image: url(/assets/wave.png);
-			background-repeat: no-repeat;
-			background-position: center top;
-			background-color: white;
+			
+			.sub-inner-wrapper {
+				background-color: white;
+				background-image: url(/assets/wave.png);
+				background-repeat: no-repeat;
+				background-position: center top;
+				min-height: 310px;
+			}
 			position: relative;
 			z-index: 1;
 			min-height: 399px;
 			.inner-wrapper {
 				height: 310px;
 				.fullWidthCenter();
+				overflow: hidden;
 				
 			}
 			.bottom {
@@ -256,7 +261,6 @@ html.touch {
 				padding-top: 24px;
 				width: 415px;
 				color: @teal;
-				height: 325px;
 				h1 {
 					font-size: 42px;
 					line-height: 49px;
