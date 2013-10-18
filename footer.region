@@ -6,14 +6,16 @@
 
     <footer id="footer">
 		<div class="left">
-		
+			{title}
+			
+			{email}
 		</div>
 		<div class="center">
-			<squarespace:navigation navigationId="footerNav" template="navigation">
+			<squarespace:navigation navigationId="footerNav" template="navigation-f">
 		</div>
       <div class="right">
 		  <!--MAIN NAVIGATION REPEAT-->
-	  	  <squarespace:navigation navigationId="mainNav" template="navigation" />
+	  	  <squarespace:navigation navigationId="mainNav" template="navigation-f" />
 	  </div>
     </footer>
 
