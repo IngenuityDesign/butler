@@ -28,7 +28,7 @@ $(function() {
 $.each($('.slides img'), function(i) {
 	console.log(i);
 	offsetLeft = i*410;
-	offsetLeft = i==0? offsetLeft : offsetLeft + 10;
+	offsetLeft += 10;
 	$(this).css('left', offsetLeft+"px");
 });
 });
