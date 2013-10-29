@@ -37,7 +37,7 @@
 	  		
 				<div class="right">
 					<div class="top">
-						Make An Appointment
+						<squarespace:navigation navigationId="appointmentNav" template="appNav" />
 					</div> <!-- .top -->
 					<div class="bottom">
 						<div class="left">
