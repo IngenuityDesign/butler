@@ -180,7 +180,7 @@ html.touch {
 		background-color: @blue;
 	}
 	#main-navigation ul {
-		.fullWidthCenter;
+		.fullWidthCenter();
 		display: block;
 		height: @navHeight;
 		li {
@@ -200,10 +200,10 @@ html.touch {
 	}
 	
 	body #content {
-		background-color: @teal;
+		background-color: white;
 		min-height: 500px;
 		color: white;
-		&.home {padding-top: 76px;}
+		&.home {padding-top: 0px;}
 		.other-wrapper {
 			.fullWidthCenter();
 		}
@@ -211,7 +211,7 @@ html.touch {
 			.sub-inner-wrapper {
 				
 				background-image: url(/assets/wave.png);
-				background-repeat: no-repeat;
+				background-repeat: repeat-x;
 				background-position: center top;
 				height: 333px;
 			}
