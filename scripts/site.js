@@ -27,7 +27,7 @@ Y.use('node', function(Y) {
 $(function() {
 $.each($('.slides img'), function(i) {
 	console.log(i);
-	offsetLeft = i*420;
+	offsetLeft = i*510;
 	$(this).css('left', offsetLeft+"px");
 });
 });
