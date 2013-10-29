@@ -12,7 +12,9 @@
 			    {.end}
 
 				<article id="main-content">
-					<div class="box">Hey{squarespace.main-content}</div>
+					<div class="box">
+					<squarespace:block-field id="main-content" columns="12" />
+					</div>
 				</article>
 				<div class="bottom"></div>
 			</div>
