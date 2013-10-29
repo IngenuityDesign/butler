@@ -1,21 +1,21 @@
 <section id="content" class="home">
 		  
-	<div class="wrapper" id="wave-wrapper">
+	<div class="wrapper">
 		<div class="sub-inner-wrapper">
 			<div class="inner-wrapper">
 				<article id="main-content">
 					<div class="box">{squarespace.main-content}</div>
 				</article>
 			</div>
+			<div class="bottom"></div>
 		</div>
-		<div class="bottom"></div>
+	
+		<div class="other-wrapper">
+			<section id="under-main-content">
+					<squarespace:block-field id="sub-main-content" columns="12" />
+			</section>
+		</div>
 
 	</div><!--.wrapper-->
-	
-	<div class="other-wrapper">
-		<section id="under-main-content">
-				<squarespace:block-field id="sub-main-content" columns="12" />
-		</section>
-	</div>
 
 </section> <!-- #content -->
