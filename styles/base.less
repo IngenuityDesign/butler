@@ -259,12 +259,8 @@ html.touch {
 			}
 		}
 		
-		&.home article {
-				padding-left: 112px;
-				padding-top: 24px;
-				width: 415px;
-				color: @teal;
-				.slides {
+		&.home {
+			.slides {
 					z-index: 1;
 					position: absolute;
 					right: 0;
@@ -276,7 +272,14 @@ html.touch {
 						float: right;
 						margin-right: 8px;	
 					}
-				}
+				}	
+		}
+		
+		&.home article {
+				padding-left: 112px;
+				padding-top: 24px;
+				width: 415px;
+				color: @teal;
 				
 				.box {
 					width: 470px;
