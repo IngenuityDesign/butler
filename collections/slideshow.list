@@ -3,14 +3,18 @@
 	<div class="wrapper">
 		<div class="sub-inner-wrapper">
 			<div class="inner-wrapper">
+				<div class="slides">
 				{.repeated section items}
 
 				{.main-image?}  
-					<img {@|image-meta} />
+					<img {assetUrl}?format=410w />
 				{.end}
 
 			    {.end}
+				</div> <!-- .slides -->
+				<!-- Welcome to Butler Pediatric Dentistry!
 
+Welcome to Butler Pediatric Dentistry, a specialized dental practice offering compassionate and technologically-advanced dentistry for children of all ages in a caring atmosphere. We are committed to providing the highes​t quality dental care in a fun and safe environment. It is our goal to have our patients excited about visiting our office.  Dr. Butler and her Team treat all of our patients and their parents as a part of our extended family. Everyone who enters our office is treated with kindness, respect and the highest standard of oral care. We always put your child's needs first, while looking to parents as an important part of our dental team.-->
 				<article id="main-content">
 					<div class="box">
 					<squarespace:block-field id="main-content" columns="12" />
