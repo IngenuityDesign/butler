@@ -1,0 +1,23 @@
+
+    {.repeated section items}
+
+        <span class="{.section active} active-link{.end}{.if folderActive} active-folder{.end}">
+		
+            <!--COLLECTION-->
+
+            {.section collection}
+              <a href="{fullUrl}">{navigationTitle}</a>
+            {.end}
+
+            <!--EXTERNAL LINK-->
+
+            {.section externalLink}
+              <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                {title}
+              </a>
+            {.end}
+
+
+        </span>
+        
+    {.end}
