@@ -23,3 +23,9 @@ Y.use('node', function(Y) {
 	http://developers.squarespace.com/custom-javascript/
 
 */
+
+$.each('.slides img', function(i) {
+	console.log(i);
+	offsetLeft = i*410;
+	$(this).css('left', offsetLeft+"px");
+});
