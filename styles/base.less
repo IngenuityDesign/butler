@@ -30,10 +30,12 @@ body {
       ul {
         display: block;
 		position: absolute;
-		top: 40px;
+		top: 48px;
 		backgound-color: @orange;
 		li {
+			z-index: 13;
 			display: block;
+			width: inherit;
 			&:hover, &.active {
 				background-color: @lightorange;	
 			}
