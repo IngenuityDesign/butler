@@ -27,15 +27,16 @@ body {
       display: inline-block;
 	  margin: 0;
 	  position: relative;
+	  &:hover ul {display:block;}
       ul {
-        display: block;
+        display: none;
 		position: absolute;
 		top: 48px;
 		backgound-color: @orange;
 		li {
 			z-index: 13;
 			display: block;
-			width: 300px;
+			width: 220px;
 			&:hover, &.active {
 				background-color: @lightorange;	
 			}
