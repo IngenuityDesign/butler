@@ -4,7 +4,8 @@
 @teal: #006a71;
 @blue: #290c54;
 @orange: #f08b1d;
-@white #ffffff;
+@white: #ffffff;
+@lightorange: #eead67;
 
 /* MOBILE FIRST
 -------------------------------------------------*/
@@ -24,16 +25,20 @@ body {
     
     li {
       display: inline-block;
-
+	  margin: 0;
+	  position: relative;
       ul {
-        display: none;
+        display: block;
+		position: absolute;
+		top: 40px;
+		
       }
 
       &:not(:last-child) {
         margin-right: .5em;
       }
 
-      &:hover > ul {
+      &:hover ul {
         display: inline-block;
       }
 
