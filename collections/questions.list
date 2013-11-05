@@ -4,6 +4,7 @@
 		<div class="sub-inner-wrapper">
 			<div class="inner-wrapper">
 				{.repeated section questions}
+				HEY T
 				<div class="question">
 					<div class="title">{title}</div>
 					<div class="hidden">
