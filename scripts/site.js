@@ -37,4 +37,26 @@ $(function() {
 			$(this).parentsUntil('.questions').children('.hidden').slideToggle();
 		});
 	});
+	
+	//page specific stuff.
+	//first we want to reformat squarespace forms to be beautiful
+	$.each($('.field-list field'), function(i) {
+		
+		theInput = $('input', this);
+		
+		switch (theInput.attr('type')) {
+			
+			case 'checkbox':
+			
+			break;
+			
+			case 'text':
+				theInput.attr('placeholder', $('label', this).text());
+				$('label', this).remove();			
+				break;
+			
+		}
+		
+	});
+	
 });
