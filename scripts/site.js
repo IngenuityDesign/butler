@@ -34,8 +34,7 @@ $(function() {
 		$('.hidden', this).hide();
 		
 		$('a', this).click(function() {
-			$(this).parents('.questions').children('.hidden').hide();
-			$(this).parentsUntil('.questions').children('.hidden').slideDown();
+			$(this).parentsUntil('.questions').children('.hidden').slideToggle();
 		});
 	});
 });
