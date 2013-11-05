@@ -29,13 +29,13 @@ $(function() {
 		offsetLeft = i*510;
 		$(this).css('left', offsetLeft+"px");
 	});
-	$.each($('.question .questions'), function(i) {
+	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
 		$('.hidden', this).hide();
 		
 		$('a', this).click(function() {
-			$(this).parents('.question').children('.hidden').hide();
-			$(this).parentsUntil('.question').children('.hidden').slideDown();
+			$(this).parents('.questions').children('.hidden').hide();
+			$(this).parentsUntil('.questions').children('.hidden').slideDown();
 		});
 	});
 });
