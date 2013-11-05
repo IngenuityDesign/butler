@@ -1,0 +1,16 @@
+<section id="content" class="page">
+		  
+	<div class="wrapper mainWrapper">  
+
+		<aside id="sidebar">
+			
+			<squarespace:block-field id="sidebar-page-{.section collection urlId}" columns="2" lock-layout="true" />
+			
+		</aside> <!-- aside#sidebar -->
+
+		<article id="main-content" class="hasSidebar">{squarespace.main-content}</article>
+		
+
+	</div><!--.wrapper-->
+
+</section> <!-- #content -->
