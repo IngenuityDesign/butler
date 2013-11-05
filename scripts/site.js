@@ -52,7 +52,7 @@ $(function() {
 			
 			case 'text':
 				theInput.attr('placeholder', $('label', this).text());
-				$('label', this).remove();			
+				$('label', this).text('');			
 				break;
 			
 		}
