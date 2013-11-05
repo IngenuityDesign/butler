@@ -1,0 +1,21 @@
+<section id="content" class="home">
+		  
+	<div class="wrapper">
+		<div class="sub-inner-wrapper">
+			<div class="inner-wrapper">
+				{.repeated section questions}
+
+
+			    {.end}
+			</div>
+		</div>
+	
+		<div class="other-wrapper">
+			<section id="under-main-content">
+					<squarespace:block-field id="sub-main-content" columns="12" />
+			</section>
+		</div>
+
+	</div><!--.wrapper-->
+
+</section> <!-- #content -->
