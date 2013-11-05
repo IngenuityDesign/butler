@@ -4,9 +4,8 @@
 		<div class="sub-inner-wrapper">
 			<div class="inner-wrapper">
 				{.repeated section items}
-				HEY T
 				<div class="question">
-					<div class="title">{title}</div>
+					<div class="title"><a href="javascript: void(0);">{title}</a></div>
 					<div class="hidden">
 					{body}
 					</div>
