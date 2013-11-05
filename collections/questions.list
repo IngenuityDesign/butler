@@ -1,27 +1,15 @@
-<section id="content" class="page">
-		  
-	<div class="wrapper mainWrapper">
-			
-		<article id="main-content">
-			
-			<div class="page-title"><h1>{title}</h1></div>
-			
-			<div class="questions">
-				{.repeated section items}
-				<div class="question">
-					<div class="title"><a href="javascript: void(0);">{title}</a></div>
-					<div class="hidden">
-					{body}
-					</div>
-				
-				</div>
+<div class="page-title"><h1>{title}</h1></div>
 
-			    {.end}
-				
-			</div>
-		
-		</article>
+<div class="questions">
+	{.repeated section items}
+	<div class="question">
+		<div class="title"><a href="javascript: void(0);">{title}</a></div>
+		<div class="hidden">
+		{body}
+		</div>
+	
+	</div>
 
-	</div><!--.wrapper-->
-
-</section> <!-- #content -->
+	{.end}
+	
+</div>
