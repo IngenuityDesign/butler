@@ -15,6 +15,7 @@ div.nice-select-created ul {
 	display: none;	
 	position: absolute;
 	top: 1.6em;
+	margin: 0;
 	margin-top: 2px;
 	left: 0;
 	border: 1px solid #e8ecec;
