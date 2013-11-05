@@ -3,7 +3,7 @@
 	<div class="wrapper">
 		<div class="sub-inner-wrapper">
 			<div class="inner-wrapper">
-				{.repeated section questions}
+				{.repeated section items}
 				HEY T
 				<div class="question">
 					<div class="title">{title}</div>
