@@ -25,9 +25,17 @@ Y.use('node', function(Y) {
 */
 
 $(function() {
-$.each($('.slides img'), function(i) {
-	console.log(i);
-	offsetLeft = i*510;
-	$(this).css('left', offsetLeft+"px");
-});
+	$.each($('.slides img'), function() {
+		offsetLeft = i*510;
+		$(this).css('left', offsetLeft+"px");
+	});
+	$.each($('.question .questions'), function() {
+		
+		$('.hidden', this).hide();
+		
+		$('a', this).click(function() {
+			$(this).parents('.question').children('.hidden').hide();
+			$(this).parentsUntil('.question').children('.hidden').slideDown();
+		});
+	});
 });
