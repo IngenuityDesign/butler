@@ -1,8 +1,10 @@
-<section id="content" class="home">
+<section id="content" class="page">
 		  
-	<div class="wrapper">
-		<div class="sub-inner-wrapper">
-			<div class="inner-wrapper">
+	<div class="wrapper mainWrapper">
+			
+		<div class="page-title"><h1>{.title}</h1></div>
+			
+		<div class="questions">
 				{.repeated section items}
 				<div class="question">
 					<div class="title"><a href="javascript: void(0);">{title}</a></div>
@@ -13,7 +15,7 @@
 				</div>
 
 			    {.end}
-			</div>
+				
 		</div>
 
 	</div><!--.wrapper-->
