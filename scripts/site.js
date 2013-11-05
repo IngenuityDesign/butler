@@ -29,8 +29,8 @@ $(function() {
 		offsetLeft = i*510;
 		$(this).css('left', offsetLeft+"px");
 	});
-	$.each($('.question .questions'), function() {
-		
+	$.each($('.question .questions'), function(i) {
+		console.log('question '+i);
 		$('.hidden', this).hide();
 		
 		$('a', this).click(function() {
