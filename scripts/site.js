@@ -45,7 +45,7 @@ function moveRightOne( sel ) {
 	var lef = parseInt($(sel).css("left")) + 1;
 	
 	if (Math.floor(lef) == Math.floor(rightPos) && !override) {
-		window.PAUSED_TIME = currentTime;
+		window.PAUSED_TIME = Math.floor(currentTime);
 		return;	
 	}
 	
