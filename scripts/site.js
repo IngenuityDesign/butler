@@ -33,7 +33,9 @@ $(function() {
 	$.each($('.slides img'), function(i) {
 		offsetLeft = i*510;
 		$(this).css('left', offsetLeft+"px");
-		window.setInterval(moveRightOne($(this)), 100);
+		window.setInterval(function() {
+			moveRightOne($(this))
+		}, 100);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
