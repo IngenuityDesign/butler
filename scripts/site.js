@@ -25,7 +25,9 @@ Y.use('node', function(Y) {
 */
 function moveRightOne( sel ) {
 	var lef = parseInt($(sel).css("left")) + 1;
-	$(sel).css('left', lef);
+	if (lef > $(window).width() + 510) {
+		$(sel).css('left', -510);
+	} else $(sel).css('left', lef);
 }
 
 $(function() {
