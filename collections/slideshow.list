@@ -10,7 +10,7 @@
 			{.end}
 			</div> <!-- .slides -->
 			<div id="text-main-content">
-				<div class="box">
+				<div class="box" style="left: 50%; margin-left: -520px;">
 				<squarespace:block-field id="main-content" columns="12" />
 				</div>
 			</div>
