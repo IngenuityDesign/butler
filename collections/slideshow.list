@@ -17,9 +17,9 @@
 			<div class="bottom"></div>
 		</div>
 </section>
-<section id="content" class="home mainWrapper">
+<section id="content" class="home">
 		  
-	<div class="wrapper">
+	<div class="wrapper mainWrapper">
 		<div class="sub-inner-wrapper">
 			
 		</div>
