@@ -31,7 +31,7 @@ function moveRightOne( sel ) {
 	override = false;
 	//number of quarter minutes minutes
 	
-	if (window.PAUSED_TIME != currentTime) {
+	if (window.PAUSED_TIME != Math.floor(currentTime)) {
 		if (window.PAUSED_TIME == currentTime + 1) override = true;
 		
 		box = $('#text-main-content .box');
