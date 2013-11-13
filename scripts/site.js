@@ -47,6 +47,7 @@ function moveRightOne( sel ) {
 		
 		if (Math.floor(lef) == Math.floor(rightPos) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
+			console.log('We are stuck');
 			return;	
 		} else {
 			window.PAUSED_TIME = 0;	
