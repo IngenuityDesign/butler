@@ -1,4 +1,4 @@
-<section id="content" class="page page-{.section collection}{id}{.end}">
+<section id="content" class="page page-{.section collection}{id}{.end} {.section collection}{typeLabel}{.end}">
 		  
 	<div class="wrapper mainWrapper">  
 
