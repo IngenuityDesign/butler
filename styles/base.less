@@ -425,7 +425,10 @@ html.touch {
 					border: 1px solid @teal;
 					font-weight: 500;
 				}
-				input[placeholder], [placeholder], *[placeholder] {color: @teal !important;}
+				input::-webkit-input-placeholder,
+				input:-moz-placeholder,
+				input::-moz-placeholder,
+				input:-ms-input-placeholder  {color: @teal !important;}
 			}	
 	}
 }
