@@ -65,7 +65,7 @@ $(function() {
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
-		}, 1);
+		}, 100);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
