@@ -34,7 +34,7 @@ $(function() {
 		offsetLeft = i*510;
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
-			moveRightOne($(this))
+			moveRightOne($('.slides img')[i])
 		}, 100);
 	});
 	$.each($('.questions .question'), function(i) {
