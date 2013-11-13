@@ -69,9 +69,11 @@ $(function() {
 		console.log(width);
 		offsetLeft = (i-1)*width;
 		$(this).css('left', offsetLeft+"px");
-		window.setInterval(function() {
+		window.setTimeout(function() {
+			window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
 		}, 50);
+		}, 2000);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
