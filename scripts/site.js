@@ -49,8 +49,10 @@ function moveRightOne( sel ) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			console.log('We are stuck');
 			return;	
-		} else {
+		} else if (Math.floor(lef) == Math.floor(rightPos) && override) {
 			window.PAUSED_TIME = 0;	
+		} else {
+				
 		}
 		console.log('lets move');
 		if (lef > $(window).width() + 510) {
