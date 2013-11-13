@@ -40,7 +40,7 @@ $(function() {
 	
 	//page specific stuff.
 	//first we want to reformat squarespace forms to be beautiful
-	$('.field-list').hide();
+	$('.field-list .title').hide();
 	$.each($('.field-list .field'), function(i) {
 		console.log('in '+i);
 		theInput = $('input', this);
