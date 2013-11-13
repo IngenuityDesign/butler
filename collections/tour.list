@@ -14,7 +14,7 @@
 			    {.end}
 				</div>
 				
-				<div class="gallery">
+				<div class="gallery-slides">
 				{.repeated section items}
 
 				{.main-image?}  
