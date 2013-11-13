@@ -5,13 +5,15 @@
 			<div class="inner-wrapper">
 				
 				<div id="text-main-content">
-				{.repeated section items}
 				<div class="big-slideshow">
+				{.repeated section items}
+				
 				{.main-image?}  
-					<div class="slideshow-item" style="background-image: url({assetUrl}?format=800w); width: 800px;background-position: center center;"></div>
+					<div class="slideshow-item" style="background-image: url({assetUrl}?format=800w); width: 800px;height:425px;background-position: center center;"></div>
 				{.end}
-				</div>
+				
 			    {.end}
+				</div>
 				</div>
 				
 				<div class="gallery-slides">
