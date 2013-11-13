@@ -66,8 +66,8 @@ $(function() {
 	$.each($('.slides img'), function(i) {
 		width = parseInt($(this).width());
 		width = width+10;
-		console.log(width);
 		offsetLeft = (i-1)*width;
+		console.log(offsetLeft);
 		$(this).css('left', offsetLeft+"px");
 		window.setTimeout(function() {
 			window.setInterval(function() {
