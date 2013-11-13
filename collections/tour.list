@@ -12,7 +12,7 @@
 				{.repeated section items}
 
 				{.main-image?}  
-					<img src="{assetUrl}?format=120w" />
+					<img src="{assetUrl}?format=100w" />
 				{.end}
 
 			    {.end}
