@@ -24,7 +24,7 @@ Y.use('node', function(Y) {
 
 */
 function moveRightOne( sel ) {
-		console.log(sel);
+		console.log(sel.html());
 		var lef = parseInt(sel.css("left")) + 1;
 		sel.css('left', lef);
 }
