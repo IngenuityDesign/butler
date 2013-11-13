@@ -8,7 +8,7 @@
 				{.repeated section items}
 				<div class="big-slideshow">
 				{.main-image?}  
-					<img src="{assetUrl}?format=600w" />
+					<img src="{assetUrl}?format=800w" />
 				{.end}
 				</div>
 			    {.end}
