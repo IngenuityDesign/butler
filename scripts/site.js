@@ -29,7 +29,7 @@ $(function() {
 		offsetLeft = i*510;
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
-			
+			console.log('interval');
 			$(this).animate({'left': '+=1'}, 1)
 			
 		}, 100);
