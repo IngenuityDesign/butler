@@ -22,6 +22,7 @@
 				{.end}
 
 			    {.end}
+					<div style="clear: both;">&nbsp;</div>
 				</div> <!-- .slides -->
 				
 				<div class="bottom"></div>
