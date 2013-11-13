@@ -32,11 +32,11 @@ function moveRightOne( sel ) {
 	//number of quarter minutes minutes
 	if (window.PAUSED_TIME + 1 == Math.floor(currentTime)) {
 		override = true;
-		console.log('restarting');
+		//console.log('restarting');
 	}
 	
 	if (window.PAUSED_TIME != Math.floor(currentTime) || override == true) {
-		console.log('should be moving');
+		//console.log('should be moving');
 		box = $('#text-main-content .box');
 		o = box.offset();
 		rightPos = o.left + box.outerWidth(false);
@@ -46,7 +46,7 @@ function moveRightOne( sel ) {
 		
 		if (Math.floor(lef) == Math.floor(rightPos) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
-			console.log('We are stuck');
+			//console.log('We are stuck');
 			return;	
 		} else if (Math.floor(lef) == Math.floor(rightPos) && override) {
 			window.PAUSED_TIME = 0;	
@@ -58,17 +58,17 @@ function moveRightOne( sel ) {
 			$(sel).css('left', -510);
 		} else $(sel).css('left', lef);
 	} else {
-		console.log(Math.floor(currentTime));	
+		//console.log(Math.floor(currentTime));	
 	}
 }
 
 $(function() {
 	$.each($('.slides img'), function(i) {
-		offsetLeft = (i-1)*510;
+		offsetLeft = (i-1)*$(this).width();
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
-		}, 1);
+		}, 50);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
