@@ -65,6 +65,6 @@ $(function() {
 		
 	});
 	
-	$('.form-wrapper').append('<p>Please note that the date and time you requested may not be available. We will contact you to confirm your appointment details</p>');
+	$('.form-wrapper').append($('<p></p>').html('Please note that the date and time you requested may not be available. We will contact you to confirm your appointment details').css('font-size', '12px').css('padding-top', '15px').css('padding-bottom', '30px'));
 	
 });
