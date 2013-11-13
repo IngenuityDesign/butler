@@ -2,7 +2,7 @@
 		  
 	<div class="wrapper mainWrapper">  
 		
-		<div class="title">{.section collection}{title}{.end}</div>
+		<div class="title"><h1>{.section collection}{title}{.end}</h1></div>
 		
 		{.section collection}
 		{.main-image?}
