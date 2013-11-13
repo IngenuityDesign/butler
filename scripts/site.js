@@ -31,27 +31,28 @@ function moveRightOne( sel ) {
 	override = false;
 	//number of quarter minutes minutes
 	
-	if (window.PAUSED_TIME == currentTime) return;
-	if (window.PAUSED_TIME == currentTime + 1) override = true;
+	if (window.PAUSED_TIME != currentTime) {
+		if (window.PAUSED_TIME == currentTime + 1) override = true;
+		
+		box = $('#text-main-content .box');
+		o = box.offset();
+		rightPos = o.left + box.outerWidth(false);
 	
-	box = $('#text-main-content .box');
-	o = box.offset();
-	rightPos = o.left + box.outerWidth(false);
-
-	console.log(window.PAUSED_TIME);
-	
-	//if right position is the same as left position of an image
-	
-	var lef = parseInt($(sel).css("left")) + 1;
-	
-	if (Math.floor(lef) == Math.floor(rightPos) && !override) {
-		window.PAUSED_TIME = Math.floor(currentTime);
-		return;	
+		console.log(window.PAUSED_TIME);
+		
+		//if right position is the same as left position of an image
+		
+		var lef = parseInt($(sel).css("left")) + 1;
+		
+		if (Math.floor(lef) == Math.floor(rightPos) && !override) {
+			window.PAUSED_TIME = Math.floor(currentTime);
+			return;	
+		}
+		
+		if (lef > $(window).width() + 510) {
+			$(sel).css('left', -510);
+		} else $(sel).css('left', lef);
 	}
-	
-	if (lef > $(window).width() + 510) {
-		$(sel).css('left', -510);
-	} else $(sel).css('left', lef);
 }
 
 $(function() {
