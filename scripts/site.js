@@ -72,7 +72,7 @@ $(function() {
 		bigOne = $('.big-slideshow .slideshow-item')[i];
 		console.log(i);
 		
-		$(this).click(function(e) {alert(i);
+		$(this).click(function(e) {
 			yOffset = i*425;
 			
 			$('.big-slideshow').animate({'top':-yOffset+"px"},300);
