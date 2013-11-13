@@ -32,7 +32,7 @@ function moveRightOne( sel ) {
 	//number of quarter minutes minutes
 	if (window.PAUSED_TIME + 1 == Math.floor(currentTime)) {
 		override = true;
-		console.log('restarting');	
+		console.log('restarting');
 	}
 	
 	if (window.PAUSED_TIME != Math.floor(currentTime) || override == true) {
@@ -44,7 +44,7 @@ function moveRightOne( sel ) {
 		
 		//if right position is the same as left position of an image
 		
-		var lef = parseInt($(sel).css("left")) + 1;
+		lef = parseInt($(sel).css("left")) + 1;
 		
 		if (Math.floor(lef) == Math.floor(rightPos) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
