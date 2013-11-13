@@ -8,7 +8,7 @@
 				Loading slideshow
 				</div>
 				
-				<div class="slides">
+				<div class="gallery">
 				{.repeated section items}
 
 				{.main-image?}  
