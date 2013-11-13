@@ -23,8 +23,30 @@ Y.use('node', function(Y) {
 	http://developers.squarespace.com/custom-javascript/
 
 */
+window.PAUSED_TIME = 0;
 function moveRightOne( sel ) {
+	//get the right border of the box
+	currentTime = new Date().getTime();
+	currentTime = currentTime/15
+	override = false;
+	//number of quarter minutes minutes
+	
+	if (window.PAUSED_TIME == currentTime) return;
+	if (window.PAUSED_TIME == currentTime + 1) override = true;
+	
+	box = $('#text-main-content .box');
+	o = box.offset();
+	rightPos = o.left + box.outerWidth(false);
+	
+	//if right position is the same as left position of an image
+	
 	var lef = parseInt($(sel).css("left")) + 1;
+	
+	if (lef == rightPos && !override) {
+		window.PAUSED_TIME = currentTime;
+		return;	
+	}
+	
 	if (lef > $(window).width() + 510) {
 		$(sel).css('left', -510);
 	} else $(sel).css('left', lef);
