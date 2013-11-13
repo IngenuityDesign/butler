@@ -1,7 +1,9 @@
 <section id="content" class="page page-{.section collection}{id}{.end}">
 		  
 	<div class="wrapper mainWrapper">  
-
+		
+		<div class="title">{.section collection}{title}{.end}</div>
+		
 		{.section collection}
 		{.main-image?}
 		<figure>
