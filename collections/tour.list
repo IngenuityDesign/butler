@@ -5,7 +5,13 @@
 			<div class="inner-wrapper">
 				
 				<div id="text-main-content">
-				Loading slideshow
+				{.repeated section items}
+				<div class="big-slideshow">
+				{.main-image?}  
+					<img src="{assetUrl}?format=600w" />
+				{.end}
+				</div>
+			    {.end}
 				</div>
 				
 				<div class="gallery">
