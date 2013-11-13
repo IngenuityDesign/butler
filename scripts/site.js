@@ -27,7 +27,7 @@ window.PAUSED_TIME = 0;
 function moveRightOne( sel ) {
 	//get the right border of the box
 	currentTime = new Date().getTime();
-	currentTime = currentTime/15
+	currentTime = currentTime/15000
 	override = false;
 	//number of quarter minutes minutes
 	
