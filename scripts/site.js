@@ -38,7 +38,7 @@ function moveRightOne( sel ) {
 	o = box.offset();
 	rightPos = o.left + box.outerWidth(false);
 
-	console.log(rightPos);
+	console.log(window.PAUSED_TIME);
 	
 	//if right position is the same as left position of an image
 	
