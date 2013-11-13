@@ -228,9 +228,9 @@ $.fn.NiceCheckbox = function() {
 $(function() {
 //	$('select').addClass('nice-select');
 	$.each($('select'), function() {
-		if ($('option', this).not(":empty").length > 0) $(this).NiceSelect(); // turn them into their beautiful selves
+		//if ($('option', this).not(":empty").length > 0) $(this).NiceSelect(); // turn them into their beautiful selves
 	});
 	$.each($('input[type=checkbox]'), function() {
-		$(this).NiceCheckbox();
+		//$(this).NiceCheckbox();
 	});
 });
