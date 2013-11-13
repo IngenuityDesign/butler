@@ -1,24 +1,27 @@
+<section>
+	<div class="inner-wrapper">
+		<div class="slides">
+			{.repeated section items}
+
+			{.main-image?}  
+				<img src="{assetUrl}?format=500w" />
+			{.end}
+
+			{.end}
+			</div> <!-- .slides -->
+			<div id="text-main-content">
+				<div class="box">
+				<squarespace:block-field id="main-content" columns="12" />
+				</div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+</section>
 <section id="content" class="home">
 		  
 	<div class="wrapper">
 		<div class="sub-inner-wrapper">
-			<div class="inner-wrapper">
-				<div class="slides">
-				{.repeated section items}
-
-				{.main-image?}  
-					<img src="{assetUrl}?format=500w" />
-				{.end}
-
-			    {.end}
-				</div> <!-- .slides -->
-				<div id="text-main-content">
-					<div class="box">
-					<squarespace:block-field id="main-content" columns="12" />
-					</div>
-				</div>
-				<div class="bottom"></div>
-			</div>
+			
 		</div>
 	
 		<div class="other-wrapper">
