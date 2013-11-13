@@ -28,6 +28,11 @@ $(function() {
 	$.each($('.slides img'), function(i) {
 		offsetLeft = i*510;
 		$(this).css('left', offsetLeft+"px");
+		window.setInterval(function() {
+			
+			$(this).animate({'left': '+=1'}, 1)
+			
+		}, 100);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
