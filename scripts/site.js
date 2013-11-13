@@ -41,7 +41,6 @@ $(function() {
 	//page specific stuff.
 	//first we want to reformat squarespace forms to be beautiful
 	$.each($('.field-list .field'), function(i) {
-		return;
 		console.log('in '+i);
 		theInput = $('input', this);
 		
@@ -54,9 +53,12 @@ $(function() {
 			case 'text':
 				theInput.attr('placeholder', $('label', this).text());
 //				$('label', this).text('');			
+				$('label', this).hide();
 				break;
 			
 		}
+		
+		
 		
 	});
 	
