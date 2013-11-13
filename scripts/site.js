@@ -23,16 +23,17 @@ Y.use('node', function(Y) {
 	http://developers.squarespace.com/custom-javascript/
 
 */
+function moveRightOne( sel ) {
+		console.log('interval');
+		var lef = parseInt(sel.css("left")) + 1;
+		sel.css('left', lef);
+}
 
 $(function() {
 	$.each($('.slides img'), function(i) {
 		offsetLeft = i*510;
 		$(this).css('left', offsetLeft+"px");
-		window.setInterval(function() {
-			console.log('interval');
-			$(this).animate({'left': '+=1'}, 1)
-			
-		}, 100);
+		window.setInterval('moveRightOne('+$(this)+')', 100);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
