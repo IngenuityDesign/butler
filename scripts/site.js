@@ -24,13 +24,13 @@ Y.use('node', function(Y) {
 
 */
 function moveRightOne( sel ) {
-		var lef = parseInt($(sel).css("left")) + 1;
-		$(sel).css('left', lef);
+	var lef = parseInt($(sel).css("left")) + 1;
+	$(sel).css('left', lef);
 }
 
 $(function() {
 	$.each($('.slides img'), function(i) {
-		offsetLeft = i*510;
+		offsetLeft = (i-1)*510;
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
