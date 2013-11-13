@@ -30,9 +30,9 @@ function moveRightOne( sel ) {
 	currentTime = currentTime/15000
 	override = false;
 	//number of quarter minutes minutes
+	if (window.PAUSED_TIME == Math.floor(currentTime) + 1) override = true;
 	
-	if (window.PAUSED_TIME != Math.floor(currentTime)) {
-		if (window.PAUSED_TIME == currentTime + 1) override = true;
+	if (window.PAUSED_TIME != Math.floor(currentTime) || override == true) {
 		
 		box = $('#text-main-content .box');
 		o = box.offset();
