@@ -66,16 +66,16 @@ $(function() {
 	});
 	
 	$('.form-wrapper').append($('<p></p>').html('Please note that the date and time you requested may not be available. We will contact you to confirm your appointment details').css('font-size', '12px').css('padding-top', '15px').css('padding-bottom', '30px'));
-	
+	$('.gallery .wrapper .gallery-slides').css('width', ('.big-slideshow .slideshow-item').length * 425+"px");
 	$.each($('.gallery .wrapper .gallery-slides .gallery-slide-item'), function(i) {
 		//this is the big one
 		bigOne = $('.big-slideshow .slideshow-item')[i];
 		console.log(i);
 		
 		$(this).click(function(e) {
-			yOffset = i*425;
+			xOffset = i*800;
 			
-			$('.big-slideshow').animate({'top':-yOffset+"px"},300);
+			$('.big-slideshow').animate({'left':-xOffset+"px"},300);
 		});
 	});
 	
