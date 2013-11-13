@@ -53,7 +53,7 @@ function moveRightOne( sel ) {
 		} else {
 				
 		}
-		console.log('lets move');
+//		console.log('lets move');
 		if (lef > $(window).width() + $(sel).width()) {
 			$(sel).css('left', $(sel).width());
 		} else $(sel).css('left', lef);
@@ -64,7 +64,9 @@ function moveRightOne( sel ) {
 
 $(function() {
 	$.each($('.slides img'), function(i) {
-		offsetLeft = (i-1)*$(this).width();
+		width = $(this).width();
+		console.log(width);
+		offsetLeft = (i-1)*width;
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
