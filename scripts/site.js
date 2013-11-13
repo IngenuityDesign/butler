@@ -30,7 +30,7 @@ function moveRightOne( sel ) {
 	currentTime = currentTime/15000
 	override = false;
 	//number of quarter minutes minutes
-	if (window.PAUSED_TIME+1 == (Math.floor(currentTime)) {
+	if (window.PAUSED_TIME + 1 == Math.floor(currentTime)) {
 		override = true;
 		console.log('restarting');	
 	}
