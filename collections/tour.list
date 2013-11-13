@@ -1,0 +1,27 @@
+<section id="content" class="gallery">
+		  
+	<div class="wrapper">
+		<div class="sub-inner-wrapper">
+			<div class="inner-wrapper">
+				
+				<div id="text-main-content">
+				Loading slideshow
+				</div>
+				
+				<div class="slides">
+				{.repeated section items}
+
+				{.main-image?}  
+					<img src="{assetUrl}?format=120w" />
+				{.end}
+
+			    {.end}
+				</div> <!-- .slides -->
+				
+				<div class="bottom"></div>
+			</div>
+		</div>
+	
+	</div><!--.wrapper-->
+
+</section> <!-- #content -->
