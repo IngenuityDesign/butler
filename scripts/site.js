@@ -44,7 +44,7 @@ function moveRightOne( sel ) {
 		
 		//if right position is the same as left position of an image
 		
-		var lef = parseInt($(sel).css("left")) + 10;
+		var lef = parseInt($(sel).css("left")) + 1;
 		
 		if (Math.floor(lef) == Math.floor(rightPos) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
