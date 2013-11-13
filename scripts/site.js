@@ -36,6 +36,7 @@ function moveRightOne( sel ) {
 	}
 	
 	if (window.PAUSED_TIME != Math.floor(currentTime) || override == true) {
+		console.log('should be moving');
 		window.PAUSED_TIME = 0;
 		box = $('#text-main-content .box');
 		o = box.offset();
