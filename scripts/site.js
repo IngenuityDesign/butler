@@ -38,6 +38,8 @@ function moveRightOne( sel ) {
 	o = box.offset();
 	rightPos = o.left + box.outerWidth(false);
 	
+	console.log(rightPos);
+	
 	//if right position is the same as left position of an image
 	
 	var lef = parseInt($(sel).css("left")) + 1;
