@@ -51,7 +51,7 @@ $(function() {
 			break;
 			
 			case 'text':
-				theInput.attr('placeholder', $('label', this).text());
+				theInput.attr('placeholder', $('label', this).text().trim());
 //				$('label', this).text('');
 				INPUT = $('input', this);
 				$(this).append(INPUT);
