@@ -36,7 +36,7 @@ $(function() {
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
-		}, 210);
+		}, 1);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
