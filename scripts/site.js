@@ -75,7 +75,7 @@ $(function() {
 		$(this).click(function(e) {alert(i);
 			yOffset = i*425;
 			
-			$('.big-slideshow').css('top', -yOffset+"px");
+			$('.big-slideshow').animate({'top':-yOffset+"px"},300);
 		});
 	});
 	
