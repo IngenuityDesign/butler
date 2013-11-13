@@ -50,7 +50,7 @@ function moveRightOne( sel ) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			return;	
 		}
-		
+		console.log('lets move');
 		if (lef > $(window).width() + 510) {
 			$(sel).css('left', -510);
 		} else $(sel).css('left', lef);
