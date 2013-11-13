@@ -24,7 +24,6 @@ Y.use('node', function(Y) {
 
 */
 function moveRightOne( sel ) {
-		console.log(sel);
 		var lef = parseInt($(sel).css("left")) + 1;
 		$(sel).css('left', lef);
 }
@@ -35,7 +34,7 @@ $(function() {
 		$(this).css('left', offsetLeft+"px");
 		window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
-		}, 100);
+		}, 210);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
