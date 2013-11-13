@@ -64,7 +64,7 @@ function moveRightOne( sel ) {
 
 $(function() {
 	$.each($('.slides img'), function(i) {
-		width = $(this).width();
+		width = $(this).width() + 10;
 		console.log(width);
 		offsetLeft = (i-1)*width;
 		$(this).css('left', offsetLeft+"px");
