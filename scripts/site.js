@@ -70,8 +70,10 @@ $(function() {
 	$('.gallery .wrapper .gallery-slides').each(function(i) {
 		//this is the big one
 		bigOne = $('.big-slideshow .slideshow-item')[i];
-		$(this).click(function() {
+		alert(i);
+		$(this).click(function(e) {
 			yOffset = i*425;
+			
 			$('.big-slideshow').css('top', -yOffset);
 		});
 	});
