@@ -37,7 +37,6 @@ function moveRightOne( sel ) {
 	
 	if (window.PAUSED_TIME != Math.floor(currentTime) || override == true) {
 		console.log('should be moving');
-		window.PAUSED_TIME = 0;
 		box = $('#text-main-content .box');
 		o = box.offset();
 		rightPos = o.left + box.outerWidth(false);
@@ -49,6 +48,8 @@ function moveRightOne( sel ) {
 		if (Math.floor(lef) == Math.floor(rightPos) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			return;	
+		} else {
+			window.PAUSED_TIME = 0;	
 		}
 		console.log('lets move');
 		if (lef > $(window).width() + 510) {
