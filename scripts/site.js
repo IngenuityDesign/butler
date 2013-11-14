@@ -56,7 +56,7 @@ function moveRightOne( sel ) {
 		flooredCurLef = Math.floor(parseInt($(sel).css('left')));
 		console.log({fl: flooredLef, fr: flooredRight, fcl: flooredCurLef});
 		//after the arithmetic 
-		if (( (flooredLef >= flooredRight) && (flooredCurLef <= flooredRight) || (flooredLef == flooredRight)) && !override) {
+		if (( Math.abs(flooredLef - flooredRight) < window.settings.interval) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			//console.log('We are stuck');
 			return;	
@@ -68,7 +68,7 @@ function moveRightOne( sel ) {
 //		console.log('lets move');
 		if (lef > $(window).width() + parseInt($(sel).attr('width'))) {
 			$(sel).css('left',  getFirstLeftVal() - (parseInt($(sel).attr('width')) + 10 ));
-		} else $(sel).css('left', lef);
+		} else $(sel).css('left', flooredLef);
 	} else {
 		//console.log(Math.floor(currentTime));	
 	}
