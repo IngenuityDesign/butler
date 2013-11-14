@@ -23,7 +23,7 @@ Y.use('node', function(Y) {
 	http://developers.squarespace.com/custom-javascript/
 
 */
-window.settings = {interval: 4};
+window.settings = {interval: 50};
 function getFirstLeftVal( ) {
 	lowestLVal = 100000;
 	$.each($('.slides img'), function() {
