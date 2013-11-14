@@ -81,7 +81,7 @@ $(function() {
 		window.setTimeout(function() {
 			window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
-		}, 10);
+		}, 1);
 		}, 2000);
 	});
 	$.each($('.questions .question'), function(i) {
