@@ -23,7 +23,7 @@ Y.use('node', function(Y) {
 	http://developers.squarespace.com/custom-javascript/
 
 */
-window.settings = {interval: 50};
+window.settings = {interval: 4};
 function getFirstLeftVal( ) {
 	lowestLVal = 100000;
 	$.each($('.slides img'), function() {
@@ -86,8 +86,8 @@ $(function() {
 		window.setTimeout(function() {
 			window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
-		}, 2000);
-		}, 2000);
+		}, 300);
+		}, 500);
 	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
