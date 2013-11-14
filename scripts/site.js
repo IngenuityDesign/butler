@@ -54,11 +54,11 @@ function moveRightOne( sel ) {
 		flooredLef = Math.floor(lef);
 		flooredRight = Math.floor(rightPos);
 		flooredCurLef = Math.floor(parseInt($(sel).css('left')));
-		console.log(Math.abs(flooredLef - flooredRight)+" for " + $(sel).attr('src'));
+//		console.log(Math.abs(flooredLef - flooredRight)+" for " + $(sel).attr('src'));
 		//after the arithmetic 
 		if (( Math.abs(flooredLef - flooredRight) < window.settings.interval) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
-			//console.log('We are stuck');
+			console.log('We are stuck');
 			return;	
 		} else if (Math.floor(lef) == Math.floor(rightPos) && override) {
 			window.PAUSED_TIME = 0;	
