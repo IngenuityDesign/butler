@@ -33,6 +33,7 @@ function getFirstLeftVal( ) {
 }
 window.PAUSED_TIME = 0;
 function moveRightOne( sel ) {
+	
 	//get the right border of the box
 	currentTime = new Date().getTime();
 	currentTime = currentTime/15000
@@ -74,6 +75,14 @@ function moveRightOne( sel ) {
 	}
 }
 
+function newMoveRightOne() {
+	left = $(this).css('left');
+	if (left > $(window).width() + parseInt($(this).attr('width'))) {
+		$(sel).css('left',  getFirstLeftVal() - (parseInt($(this).attr('width')) + 10 )*2);
+	}
+	$(this).animate({left: '+='+parseInt($(this).attr('width')) }, 300);
+}
+
 $(function() {
 	//we need to load the slide show when all of the images have widths. How stupid, right?
 	
@@ -83,8 +92,15 @@ $(function() {
 		offsetLeft = (i-1)*width;
 		console.log(offsetLeft);
 		$(this).css('left', offsetLeft+"px");
+		
 		window.setTimeout(function() {
 			window.setInterval(function() {
+				left = $(this).css('left');
+				if (left > $(window).width() + parseInt($(this).attr('width'))) {
+					$(sel).css('left',  getFirstLeftVal() - (parseInt($(this).attr('width')) + 10 )*2);
+				}
+				$(this).animate({left: '+='+parseInt($(this).attr('width')) }, 300);
+	return;
 			moveRightOne($('.slides img')[i])
 		}, 1);
 		}, 500);
