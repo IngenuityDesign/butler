@@ -97,7 +97,7 @@ $(function() {
 			window.setInterval(function() {
 				return newMoveRightOne($('.slides img')[i]);
 			moveRightOne($('.slides img')[i])
-		}, 500);
+		}, 4000);
 		}, 500);
 	});
 	$.each($('.questions .question'), function(i) {
