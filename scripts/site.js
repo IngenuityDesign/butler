@@ -111,6 +111,15 @@ $(function() {
 		
 	});
 	
+	ap = function() {
+			
+		if ($('.big-slideshow').width() < $('.big-slideshow').offset().left + 800) {
+			$('.big-slideshow').animate({left: 0}, 300);
+		} else $('.big-slideshow').animate({left:'-=800px'}, 300);
+		
+		
+	}
+	
 	$('.form-wrapper').append($('<p></p>').html('Please note that the date and time you requested may not be available. We will contact you to confirm your appointment details').css('font-size', '12px').css('padding-top', '15px').css('padding-bottom', '30px'));
 	$('#text-main-content .big-slideshow').css('width', ($('.big-slideshow .slideshow-item').length * 800)+800+"px");
 	$.each($('.gallery .wrapper .gallery-slides .gallery-slide-item'), function(i) {
@@ -121,8 +130,19 @@ $(function() {
 		$(this).click(function(e) {
 			xOffset = i*800;
 			
-			$('.big-slideshow').animate({'left':-xOffset+"px"},300);
+			$('.big-slideshow').animate({left:-xOffset+"px"},300);
+//			window.autoPlay window.interv
 		});
 	});
+	
+	var isSlideshowAutoplaying = true;
+	
+	//now make it autoplay in two seconds
+	
+	window.setTimeout(function() {
+		
+		window.autoPlay = window.setInterval(ap, 5000);
+		
+	}, 2000);
 	
 });
