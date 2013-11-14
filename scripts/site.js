@@ -77,7 +77,7 @@ $(function() {
 			}, 50);
 			}, 2000);
 		});
-	}
+	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
 		$('.hidden', this).hide();
