@@ -113,7 +113,7 @@ $(function() {
 	
 	ap = function() {
 			
-		if ($('.big-slideshow').width() <= Math.abs($('.big-slideshow').offset().left) + 800) {
+		if ($('.big-slideshow').width() <= Math.abs($('.big-slideshow').css('left')) + 800) {
 			$('.big-slideshow').animate({left: 0}, 300);
 		} else $('.big-slideshow').animate({left:'-=800px'}, 300);
 		
