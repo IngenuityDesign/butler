@@ -56,7 +56,7 @@ function moveRightOne( sel ) {
 		flooredCurLef = Math.floor(parseInt($(sel).css('left')));
 		console.log({fl: flooredLef, fr: flooredRight, fcl: flooredCurLef});
 		//after the arithmetic 
-		if (( (flooredLef >= flooredRight) && (flooredCurLeft <= flooredRight) || (flooredLef == flooredRight)) && !override) {
+		if (( (flooredLef >= flooredRight) && (flooredCurLef <= flooredRight) || (flooredLef == flooredRight)) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			//console.log('We are stuck');
 			return;	
