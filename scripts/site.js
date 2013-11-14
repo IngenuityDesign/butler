@@ -23,6 +23,7 @@ Y.use('node', function(Y) {
 	http://developers.squarespace.com/custom-javascript/
 
 */
+window.settings = {interval: 4};
 function getFirstLeftVal( ) {
 	lowestLVal = 100000;
 	$.each($('.slides img'), function() {
@@ -49,7 +50,7 @@ function moveRightOne( sel ) {
 		rightPos = o.left + box.outerWidth(false);
 		
 		//if right position is the same as left position of an image
-		lef = parseInt($(sel).css("left")) + 4;
+		lef = parseInt($(sel).css("left")) + window.settings.interval;
 		
 		if ((Math.floor(lef) >= Math.floor(rightPos) && (Math.floor(parseInt($(sel).css('left'))) <= Math.floor(rightPos) ) || Math.floor(lef) == Math.floor(rightPos)) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
