@@ -54,7 +54,7 @@ function moveRightOne( sel ) {
 		flooredLef = Math.floor(lef);
 		flooredRight = Math.floor(rightPos);
 		flooredCurLef = Math.floor(parseInt($(sel).css('left')));
-		console.log({fl: flooredLef, fr: flooredRight, fcl: flooredCurLef});
+		console.log(Math.abs(flooredLef - flooredRight));
 		//after the arithmetic 
 		if (( Math.abs(flooredLef - flooredRight) < window.settings.interval) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
