@@ -112,7 +112,7 @@ $(function() {
 	});
 	
 	ap = function() {
-		newOffset = Math.abs($('.big-slideshow').css('left')) + 800;
+		newOffset = Math.abs(parseInt($('.big-slideshow').css('left'))) + 800;
 		console.log(newOffset);
 		if ($('.big-slideshow').width() <= newOffset) {
 			$('.big-slideshow').animate({left: 0}, 300);
