@@ -75,12 +75,12 @@ function moveRightOne( sel ) {
 	}
 }
 
-function newMoveRightOne() {
-	left = $(this).css('left');
-	if (left > $(window).width() + parseInt($(this).attr('width'))) {
-		$(sel).css('left',  getFirstLeftVal() - (parseInt($(this).attr('width')) + 10 )*2);
+function newMoveRightOne(sel) {
+	left = $(sel).css('left');
+	if (left > $(window).width() + parseInt($(sel).attr('width'))) {
+		$(sel).css('left',  getFirstLeftVal() - (parseInt($(sel).attr('width')) + 10 )*2);
 	}
-	$(this).animate({left: '+='+parseInt($(this).attr('width')) }, 300);
+	$(sel).animate({left: '+='+parseInt($(sel).attr('width')) }, 300);
 }
 
 $(function() {
@@ -92,15 +92,10 @@ $(function() {
 		offsetLeft = (i-1)*width;
 		console.log(offsetLeft);
 		$(this).css('left', offsetLeft+"px");
-		
+		sel = 
 		window.setTimeout(function() {
 			window.setInterval(function() {
-				left = $(this).css('left');
-				if (left > $(window).width() + parseInt($(this).attr('width'))) {
-					$(sel).css('left',  getFirstLeftVal() - (parseInt($(this).attr('width')) + 10 )*2);
-				}
-				$(this).animate({left: '+='+parseInt($(this).attr('width')) }, 300);
-	return;
+				return newMoveRightOne($('.slides img')[i]);
 			moveRightOne($('.slides img')[i])
 		}, 1);
 		}, 500);
