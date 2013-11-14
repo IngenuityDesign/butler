@@ -55,7 +55,7 @@ function moveRightOne( sel ) {
 		}
 //		console.log('lets move');
 		if (lef > $(window).width() + $(sel).width()) {
-			$(sel).css('left', $(sel).width());
+			$(sel).css('left', -1 * ($(sel).width() + 10 ));
 		} else $(sel).css('left', lef);
 	} else {
 		//console.log(Math.floor(currentTime));	
