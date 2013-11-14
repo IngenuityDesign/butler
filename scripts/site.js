@@ -77,6 +77,7 @@ function moveRightOne( sel ) {
 
 function newMoveRightOne(sel) {
 	left = $(sel).css('left');
+	console.log(left);
 	if (left > $(window).width() + parseInt($(sel).attr('width'))) {
 		$(sel).css('left',  getFirstLeftVal() - (parseInt($(sel).attr('width')) + 10 )*2);
 		console.log('rearranging');
