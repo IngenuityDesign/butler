@@ -23,6 +23,13 @@ Y.use('node', function(Y) {
 	http://developers.squarespace.com/custom-javascript/
 
 */
+function getFirstLeftVal( ) {
+	lowestLVal = 100000;
+	$.each($('.slides img'), function() {
+		if (parseInt($(this).css('left')) < lowestLVal) lowestLVal = parseInt($(this).css('left'));
+	});
+	return lowestLVal;
+}
 window.PAUSED_TIME = 0;
 function moveRightOne( sel ) {
 	//get the right border of the box
@@ -55,7 +62,7 @@ function moveRightOne( sel ) {
 		}
 //		console.log('lets move');
 		if (lef > $(window).width() + parseInt($(sel).attr('width'))) {
-			$(sel).css('left', -1 * (parseInt($(sel).attr('width')) - 10 ));
+			$(sel).css('left',  getFirstLeftVal() - (parseInt($(sel).attr('width')) + 10 ));
 		} else $(sel).css('left', lef);
 	} else {
 		//console.log(Math.floor(currentTime));	
