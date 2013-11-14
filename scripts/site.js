@@ -51,8 +51,12 @@ function moveRightOne( sel ) {
 		
 		//if right position is the same as left position of an image
 		lef = parseInt($(sel).css("left")) + window.settings.interval;
-		
-		if (( (Math.floor(lef) >= Math.floor(rightPos)) && (Math.floor(parseInt($(sel).css('left'))) <= Math.floor(rightPos) ) || Math.floor(lef) == Math.floor(rightPos)) && !override) {
+		flooredLef = Math.floor(lef);
+		flooredRight = Math.floor(rightPos);
+		flooredCurLef = Math.floor(parseInt($(sel).css('left')));
+		console.log({fl: flooredLef, fr: flooredRight, fcl: flooredCurLef});
+		//after the arithmetic 
+		if (( (flooredLef >= flooredRight) && (flooredCurLeft <= flooredRight) || (flooredLef == flooredRight)) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			//console.log('We are stuck');
 			return;	
