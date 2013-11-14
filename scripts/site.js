@@ -54,8 +54,8 @@ function moveRightOne( sel ) {
 				
 		}
 //		console.log('lets move');
-		if (lef > $(window).width() + $(sel).width()) {
-			$(sel).css('left', -1 * ($(sel).width() + 10 ));
+		if (lef > $(window).width() + $(sel).attr('width')) {
+			$(sel).css('left', -1 * ($(sel).attr('width') + 10 ));
 		} else $(sel).css('left', lef);
 	} else {
 		//console.log(Math.floor(currentTime));	
@@ -63,25 +63,20 @@ function moveRightOne( sel ) {
 }
 
 $(function() {
-	//$('.slides img').ready(function() {
-		$.each($('.slides img'), function(i) {
-			$(this).ready(function() {
-				width = parseInt($(this).width());
-				width = width+10;
-				offsetLeft = (i-1)*width;
-				console.log(offsetLeft);
-				$(this).css('left', offsetLeft+"px");
-				
-				window.setTimeout(function() {
-					window.setInterval(function() {
-					moveRightOne($('.slides img')[i])
-				}, 50);
-				}, 2000);
-			});
-			
-			
-		});
-	//});
+	//we need to load the slide show when all of the images have widths. How stupid, right?
+	
+	$.each($('.slides img'), function(i) {
+		width = parseInt($(this).attr('width'));
+		width = width+10;
+		offsetLeft = (i-1)*width;
+		console.log(offsetLeft);
+		$(this).css('left', offsetLeft+"px");
+		window.setTimeout(function() {
+			window.setInterval(function() {
+			moveRightOne($('.slides img')[i])
+		}, 50);
+		}, 2000);
+	});
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
 		$('.hidden', this).hide();
