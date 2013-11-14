@@ -126,7 +126,6 @@ $(function() {
 	$.each($('.gallery .wrapper .gallery-slides .gallery-slide-item'), function(i) {
 		//this is the big one
 		bigOne = $('.big-slideshow .slideshow-item')[i];
-		console.log(i);
 		
 		$(this).click(function(e) {
 			xOffset = i*800;
