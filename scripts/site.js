@@ -49,9 +49,9 @@ function moveRightOne( sel ) {
 		rightPos = o.left + box.outerWidth(false);
 		
 		//if right position is the same as left position of an image
-		lef = parseInt($(sel).css("left")) + 1;
+		lef = parseInt($(sel).css("left")) + 4;
 		
-		if (Math.floor(lef) == Math.floor(rightPos) && !override) {
+		if ((Math.floor(lef) >= Math.floor(rightPos) && (Math.floor(lef)-4 < Math.floor(rightPos) ) ) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			//console.log('We are stuck');
 			return;	
@@ -81,7 +81,7 @@ $(function() {
 		window.setTimeout(function() {
 			window.setInterval(function() {
 			moveRightOne($('.slides img')[i])
-		}, 1);
+		}, 5);
 		}, 2000);
 	});
 	$.each($('.questions .question'), function(i) {
