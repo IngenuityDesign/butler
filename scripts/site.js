@@ -130,7 +130,8 @@ $(function() {
 			xOffset = i*800;
 			
 			$('.big-slideshow').animate({left:-xOffset+"px"},300);
-//			window.autoPlay window.interv
+			window.clearInterval(window.autoPlay);
+			window.autoPlay = window.setInterval(ap, 5000);
 		});
 	});
 	
