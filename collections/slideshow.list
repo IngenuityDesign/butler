@@ -4,7 +4,7 @@
 			{.repeated section items}
 
 			{.main-image?}  
-				<img src="{assetUrl}?format=500w" width="500" />
+				<img src="{assetUrl}?format=500w" {image-resolution} />
 			{.end}
 
 			{.end}
