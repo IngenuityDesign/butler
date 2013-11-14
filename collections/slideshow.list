@@ -4,7 +4,7 @@
 			{.repeated section items}
 
 			{.main-image?}  
-				<img src="{assetUrl}?format=500w" />
+				<img src="{assetUrl}?format=500w" {@|image-meta} />
 			{.end}
 
 			{.end}
