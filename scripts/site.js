@@ -94,6 +94,7 @@ function placeImage(selector, i) {
 		case 0:
 			//place this right next to the square thing
 			selector.css('left', rightPos+"px");
+			console.log(rightPos);
 			break;
 		default:
 			convertedIndex = Math.ceil(i/2);
