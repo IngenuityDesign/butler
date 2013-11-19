@@ -175,7 +175,8 @@ $(function() {
 		
 		
 	}
-	
+	$('.second').hide();
+	$('.second input').val('00');
 	$('.form-wrapper').append($('<p></p>').html('Please note that the date and time you requested may not be available. We will contact you to confirm your appointment details').css('font-size', '12px').css('padding-top', '15px').css('padding-bottom', '30px'));
 	$('#text-main-content .big-slideshow').css('width', ($('.big-slideshow .slideshow-item').length * 800)+"px");
 	$.each($('.gallery .wrapper .gallery-slides .gallery-slide-item'), function(i) {
