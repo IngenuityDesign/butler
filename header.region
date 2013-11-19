@@ -51,11 +51,11 @@
 						{.end}
 							<div class="social">
 								<ul>
-									<li style="display:inline;"><a style="display: block;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="display: block;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="display: block;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="display: block;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="display: block;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
 								</ul>
 								
 							</div>
