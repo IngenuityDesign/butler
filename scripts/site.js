@@ -102,16 +102,17 @@ function placeImage(selector, i) {
 				case 1:
 					//odd
 					//subtract rightpos
-					adj = convertedIndex * -1 * (parseInt(selector.attr('width')) + 10);
-					
+					adj = convertedIndex * (parseInt(selector.attr('width')) + 10);
+					adj = rightPos - adj;
 					break;
 				case 0:
 					//even
 					adj = convertedIndex * (parseInt(selector.attr('width')) + 10);
+					adj = rightPos + adj;
 					break;
 			}
 			console.log(i + ": " + adj );
-				selector.css('left', adj+"px");
+			selector.css('left', adj+"px");
 			break;	
 	}
 }
