@@ -50,7 +50,14 @@
 						{.end}
 						{.end}
 							<div class="social">
-								<img src="/assets/social.png" alt="">
+								<ul>
+									<li style="display:inline;"><a style="width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="width: 24px; height: 24px; margin-right: 5px;background-image: url(/assets/social.png);" href="#"></a></li>
+								</ul>
+								
 							</div>
 						
 						</div> <!-- .left -->
