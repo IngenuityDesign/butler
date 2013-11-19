@@ -82,7 +82,7 @@ function newMoveRightOne(sel) {
 		$(sel).css('left',  getFirstLeftVal() - (parseInt($(sel).attr('width')) + 10 ));
 		console.log('rearranging');
 	}
-	$(sel).animate({left: '+='+parseInt($(sel).attr('width')) }, 300);
+	$(sel).animate({left: '+='+parseInt($(sel).attr('width')) + 10 }, 300);
 }
 
 function placeImage(selector, i) {
