@@ -4,7 +4,7 @@
 		
 		<div class="title"><h1>{.section collection}{title}{.end}</h1></div>
 		
-		<!--
+
 		{.section collection}
 		{.main-image?}
 		<figure>
@@ -12,7 +12,6 @@
 		</figure>
 		{.end}{.end}
 
-		-->
 
 		<article id="main-content"{.section collection}{.main-image?} class="hasThumbnail"{.end}{.end}>{squarespace.main-content}</article>
 		
