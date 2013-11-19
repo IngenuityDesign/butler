@@ -85,15 +85,39 @@ function newMoveRightOne(sel) {
 	$(sel).animate({left: '+='+parseInt($(sel).attr('width')) }, 300);
 }
 
+function placeImage(selector, i) {
+	box = $('#text-main-content .box');
+	o = box.offset();
+	rightPos = o.left + box.outerWidth(false);
+	//we have the reference point now
+	switch (i) {
+		case 0:
+			//place this right next to the square thing
+			selector.css('left', rightPos+"px");
+			break;
+		default:
+			convertedIndex = Math.ceil(i/2);
+			switch (i%2) {
+				case 1:
+					//odd
+					//subtract rightpos
+					adj = convertedIndex * -1 * parseInt(selector.attr('width'));
+					break;
+				case 0:
+					//even
+					adj = convertedIndex * parseInt(selector.attr('width'));
+					break;
+			}
+				selector.css('left', adj+"px");
+			break;	
+	}
+}
+
 $(function() {
 	//we need to load the slide show when all of the images have widths. How stupid, right?
 	
 	$.each($('.slides img'), function(i) {
-		width = parseInt($(this).attr('width'));
-		width = width+10;
-		offsetLeft = (i-1)*width;
-		console.log(offsetLeft);
-		$(this).css('left', offsetLeft+"px");
+		placeImage($(this), i);
 		sel = 
 		window.setTimeout(function() {
 			window.setInterval(function() {
