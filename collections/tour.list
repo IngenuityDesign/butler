@@ -20,7 +20,7 @@
 				{.repeated section items}
 
 				{.main-image?}  
-					<div class="gallery-slide-item" style="background-image: url({assetUrl}?format=110w); width: 85px; height: 85px; background-position: center center;background-repeat: no-repeat;">&nbsp;</div>
+					<div class="gallery-slide-item" style="background-image: url({assetUrl}?format=110w); width: 79px; height: 79px; background-position: center center;background-repeat: no-repeat;">&nbsp;</div>
 				{.end}
 
 			    {.end}
