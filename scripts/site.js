@@ -118,9 +118,7 @@ function placeImage(selector, i) {
 	}
 }
 
-$(function() {
-	//we need to load the slide show when all of the images have widths. How stupid, right?
-	
+function repositionImages() {
 	$.each($('.slides img'), function(i) {
 		placeImage($(this), i);
 		sel = 
@@ -130,7 +128,16 @@ $(function() {
 			moveRightOne($('.slides img')[i])
 		}, 4000);
 		}, 500);
+	});	
+}
+
+$(function() {
+	//we need to load the slide show when all of the images have widths. How stupid, right?
+	$(window).resize(function() {
+		repositionImages();
 	});
+	repositionImages();
+	
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
 		$('.hidden', this).hide();
