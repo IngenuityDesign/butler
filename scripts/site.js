@@ -117,26 +117,35 @@ function placeImage(selector, i) {
 			break;	
 	}
 }
+var slideShow = {}
+slideShow.intervals = Array();
 
-function repositionImages() {
+function repositionImages(fix) {
 	$.each($('.slides img'), function(i) {
 		placeImage($(this), i);
-		sel = 
-		window.setTimeout(function() {
-			window.setInterval(function() {
+		sel = '';
+		if (!fix) {
+			window.setTimeout(function() {
+				slideShow.intervals[i] = window.setInterval(function() {
+					return newMoveRightOne($('.slides img')[i]);
+				moveRightOne($('.slides img')[i])
+			}, 4000);
+			}, 500);
+		} else {
+			slideShow.intervals[i] = window.setInterval(function() {
 				return newMoveRightOne($('.slides img')[i]);
-			moveRightOne($('.slides img')[i])
-		}, 4000);
-		}, 500);
+				moveRightOne($('.slides img')[i])
+			}, 4000);
+		}
 	});	
 }
 
 $(function() {
 	//we need to load the slide show when all of the images have widths. How stupid, right?
 	$(window).resize(function() {
-		repositionImages();
+		repositionImages(true);
 	});
-	repositionImages();
+	repositionImages(false);
 	
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
