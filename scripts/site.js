@@ -132,6 +132,7 @@ function repositionImages(fix) {
 			}, 4000);
 			}, 500);
 		} else {
+			window.clearInterval(slideShow.intervals[i]);
 			slideShow.intervals[i] = window.setInterval(function() {
 				return newMoveRightOne($('.slides img')[i]);
 				moveRightOne($('.slides img')[i])
