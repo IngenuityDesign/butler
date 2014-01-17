@@ -26,9 +26,9 @@
 	
 		<div class="other-wrapper">
 			<section id="under-main-content">
-					<squarespace:block-field id="sub-main-content-1" columns="4" />
-					<squarespace:block-field id="sub-main-content-2" columns="4" />
-					<squarespace:block-field id="sub-main-content-3" columns="4" />
+				<aside class="first"><squarespace:block-field id="sub-main-content-1" columns="12" /></aside>
+				<aside class="second"><squarespace:block-field id="sub-main-content-2" columns="12" /></aside>
+				<aside class="third"><squarespace:block-field id="sub-main-content-3" columns="12" /></aside>
 			</section>
 		</div>
 
