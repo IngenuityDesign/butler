@@ -39,6 +39,7 @@
 				</div>
 			</div>
 		  <div class="right">
+		  	  <div class="menu"><div class="title"><strong>Butler Pediatric Dentistry</strong></div></div>
 			  <!--MAIN NAVIGATION REPEAT-->
 			  <squarespace:navigation navigationId="mainNav" template="navigation-f" />
 		  </div>
