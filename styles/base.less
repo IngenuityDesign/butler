@@ -394,9 +394,14 @@ html.touch {
 		}
 		aside {
 			width: 30%; float: left; box-sizing: border-box; padding: 65px 35px 30px; margin-left: 5%;
+			background-repeat: no-repeat;
+			background-position: top left;
 			&:first-child {
 				margin-left: 0;	
 			}
+			&.first {background-image: url('/assets/wave-left.png');}
+			&.scnd {background-image: url('/assets/wave-middle.png');}
+			&.third {background-image: url('/assets/wave-right.png');}
 		}
 		&:after {
 			content: " ";
