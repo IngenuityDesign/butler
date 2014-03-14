@@ -563,12 +563,14 @@ h2 a {
 		text-transform: uppcase;
 		color: white;
 		text-decoration: none;
-		padding: 5px 10px;
+		padding: 9px 10px;
 		text-align: center;
 		background-color: #f08b1d;
-		.boxShadow(0, 0, 3px, 30%);
+		-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
 		&:after {
-			content: ">";
+			content: " >";
 			text-transform: uppercase;
 		}
 
