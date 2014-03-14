@@ -133,6 +133,9 @@ html.touch {
 	margin: 0;
 	padding: 0;
 }
+.borderBox() {
+	box-sizing: border-box;-moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box;	
+}
 
 .fullWidthCenter() {
 	width: @fullWidth;
@@ -393,7 +396,9 @@ html.touch {
 			font-size: 22px;
 		}
 		aside {
-			width: 32%; float: left; box-sizing: padding-box; padding: 50px 25px 30px; margin-left: 10px; -moz-box-sizing: padding-box; -webkit-box-sizing: padding-box;
+			width: 32%; float: left;
+			.borderBox();
+			padding: 50px 25px 30px; margin-left: 10px; 
 			background-repeat: no-repeat;
 			background-position: top left;
 			min-height: 216px;
