@@ -26,9 +26,9 @@
 	
 		<div class="other-wrapper">
 			<section id="under-main-content">
-				<aside class="first"><squarespace:block-field id="sub-main-content-1" columns="12" lock-layout="true" /></aside>
-				<aside class="scnd"><squarespace:block-field id="sub-main-content-2" columns="12" lock-layout="true" /></aside>
-				<aside class="third"><squarespace:block-field id="sub-main-content-3" columns="12" lock-layout="true" /></aside>
+				<aside class="first"><a href="/appointment"><squarespace:block-field id="sub-main-content-1" columns="12" lock-layout="true" /></a></aside>
+				<aside class="scnd"><a href="/office-tour"><squarespace:block-field id="sub-main-content-2" columns="12" lock-layout="true" /></a></aside>
+				<aside class="third"><a href="/specials"><squarespace:block-field id="sub-main-content-3" columns="12" lock-layout="true" /></a></aside>
 			</section>
 		</div>
 
