@@ -133,6 +133,13 @@ html.touch {
 	margin: 0;
 	padding: 0;
 }
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow:         @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
 .borderBox() {
 	box-sizing: border-box;-moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box;	
 }
@@ -540,13 +547,7 @@ h2 a {
 	text-transform: uppercase;	
 }
 /*Customize form blocks*/
-.box-shadow(@style, @c) when (iscolor(@c)) {
-  -webkit-box-shadow: @style @c;
-  box-shadow:         @style @c;
-}
-.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-  .box-shadow(@style, rgba(0, 0, 0, @alpha));
-}
+
 .page-Forms article a {
 	background-repeat: no-repeat; background-image: url(/assets/file.png); display: block; width: 150px; height: auto; padding-top: 0px; font-size: 1.1em; color: white; text-transform: uppercase; padding-left: 70px; background-position: left top; min-height: 100px; text-decoration: none; float: left; margin-right: 30px;
 }
