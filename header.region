@@ -51,11 +51,11 @@
 						{.end}
 							<div class="social">
 								<ul style="margin: 0; padding: 0;">
-									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="background-position: 24px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="background-position: 51px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="background-position: 80px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li>
-									<li style="display:inline;"><a style="background-position: 108px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li>
+									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="https://www.facebook.com/ButlerPediatricDentistry"></a></li>
+									<li style="display:inline;"><a style="background-position: 24px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="http://instagram.com/butlerpediatricdentistry"></a></li>
+									<!--li style="display:inline;"><a style="background-position: 51px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li-->
+									<li style="display:inline;"><a style="background-position: 80px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="https://twitter.com/ButlerPedDental"></a></li>
+									<li style="display:inline;"><a style="background-position: 108px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="http://www.yelp.com/biz/butler-pediatric-dentistry-fullerton"></a></li>
 								</ul>
 								
 							</div>
