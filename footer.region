@@ -1,55 +1,55 @@
-
-    <!--FOOTER WITH OPEN BLOCK FIELD-->
-
-    <footer id="footer">
-		<div class="wrapper">
-			<div class="left">
-			{.section website}
-				<div class="website-title">{siteTitle}</div>
-
-				{.section location}
-				<div class="address">
-					{addressLine1}<br>
-					{addressLine2}
-				</div>
-				{.end}
-
-			{.end}
-			{.section websiteSettings}
-				<div class="phone">
-				T: {contactPhoneNumber}<br>
-				F: 714.680.9501
-				</div>
-
-				<div class="email">
-				{contactEmail}
-				</div>
-
-
-			{.end}
-			</div>
-			<div class="center">
-				<div class="menu">
-					<div class="title"><squarespace:block-field id="menu-title-1" columns="12" lock-layout="true" /></div>
-					<squarespace:navigation navigationId="footNavLeft" template="navigation-f">
-				</div>
-				<div class="menu">
-					<div class="title"><squarespace:block-field id="main-title-2" columns="12" lock-layout="true" /></div>
-					<squarespace:navigation navigationId="footNavRight" template="navigation-f">
-				</div>
-			</div>
-		  <div class="right">
-		  	  <div class="menu"><div class="title"><h3><strong>Butler Pediatric Dentistry</strong></h3></div></div>
-			  <!--MAIN NAVIGATION REPEAT-->
-			  <squarespace:navigation navigationId="mainNav" template="navigation-f" />
-		  </div>
-		</div> <!--.wrapper-->
-    </footer>
 </main>
-    <!--INJECTION POINT FOR TRACKING SCRIPTS AND USER CONTENT FROM THE CODE INJECTION TAB-->
+<!--FOOTER WITH OPEN BLOCK FIELD-->
 
-    {squarespace-footers}
+<footer id="footer">
+  <div class="wrapper">
+  	<div class="left">
+  	{.section website}
+  		<div class="website-title">{siteTitle}</div>
 
-  </body>
+  		{.section location}
+  		<div class="address">
+  			{addressLine1}<br>
+  			{addressLine2}
+  		</div>
+  		{.end}
+
+  	{.end}
+  	{.section websiteSettings}
+  		<div class="phone">
+  		T: {contactPhoneNumber}<br>
+  		F: 714.680.9501
+  		</div>
+
+  		<div class="email">
+  		{contactEmail}
+  		</div>
+
+
+  	{.end}
+  	</div>
+  	<div class="center">
+  		<div class="menu">
+  			<div class="title"><squarespace:block-field id="menu-title-1" columns="12" lock-layout="true" /></div>
+  			<squarespace:navigation navigationId="footNavLeft" template="navigation-f">
+  		</div>
+  		<div class="menu">
+  			<div class="title"><squarespace:block-field id="main-title-2" columns="12" lock-layout="true" /></div>
+  			<squarespace:navigation navigationId="footNavRight" template="navigation-f">
+  		</div>
+  	</div>
+    <div class="right">
+    	  <div class="menu"><div class="title"><h3><strong>Butler Pediatric Dentistry</strong></h3></div></div>
+  	  <!--MAIN NAVIGATION REPEAT-->
+  	  <squarespace:navigation navigationId="mainNav" template="navigation-f" />
+    </div>
+  </div> <!--.wrapper-->
+</footer>
+
+<!--INJECTION POINT FOR TRACKING SCRIPTS AND USER CONTENT FROM THE CODE INJECTION TAB-->
+
+{squarespace-footers}
+
+</body>
 
 </html>
