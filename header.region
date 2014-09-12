@@ -1,101 +1,99 @@
 <!doctype html>
-
 <html>
 
-  <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-	
+<head>
 
-    <!--INCLUDE SQS SCRIPTS, META TAGS AND USER CONTENT FROM THE CODE INJECTION TAB-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 
-    {squarespace-headers}
 
-    <!--
+  <!--INCLUDE SQS SCRIPTS, META TAGS AND USER CONTENT FROM THE CODE INJECTION TAB-->
 
-      To load up a script, use this syntax in site.region.
-      <squarespace:script src="site.js" combo="true" />
-	  <squarespace:Script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" combo="false" />
-      Helpful tip: For debugging set combo to false.
+  {squarespace-headers}
 
-    -->
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="scripts/jquery-2.0.0.min.js"><\/script>')</script>
-  	<squarespace:script src="site.js" combo="true" />
-  </head>
+	<squarespace:script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" combo="false" />
+  <squarespace:script src="site.js" combo="true" />
+</head>
 
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-  
-      <!--HEADER-->
-  
-		<header id="header">
-	  		<div class="wrapper">
-			<!--SITE TITLE OR LOGO-->
-	  		
-				<div class="right">
-					<div class="top">
-						<squarespace:navigation navigationId="appointmentNav" template="appNav" />
-					</div> <!-- .top -->
-					<div class="bottom">
-						<div class="left">
-						{.section website}
-						{.section location}
-							<div class="address">
-							{addressLine1}<br>
-							{addressLine2}
-							</div>
-						{.end}
-						{.end}
-							<div class="social">
-								<ul style="margin: 0; padding: 0;">
-									<li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="https://www.facebook.com/ButlerPediatricDentistry"></a></li>
-									<li style="display:inline;"><a style="background-position: 24px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="http://instagram.com/butlerpediatricdentistry"></a></li>
-									<!--li style="display:inline;"><a style="background-position: 51px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li-->
-									<li style="display:inline;"><a style="background-position: 136px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="https://twitter.com/ButlerPedDental"></a></li>
-									<li style="display:inline;"><a style="background-position: 108px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="http://www.yelp.com/biz/butler-pediatric-dentistry-fullerton"></a></li>
-								</ul>
-								
-							</div>
-						
-						</div> <!-- .left -->
-						<div class="right">
-							{.section websiteSettings}
-							<div class="phone">
-							P: {contactPhoneNumber}
-							</div>
-							<div class="phone">
-							F: 714.680.9501
-							</div>
-							{.end}
-						</div> <!-- .right -->
-					</div> <!-- .bottom -->
-				</div>  <!-- .right -->
-			
-			{.section website}
-	  
-			  <div id="logo">
-				<a href="/">
-				  {.section logoImageUrl}
-				   <img src="{logoImageUrl}?format=original" alt="{siteTitle}" />
-				  {.or}
-					{siteTitle}
-				  {.end}
-				</a>
-			  </div>
-			  
-			  <!--SITE TAGLINE-->
-	  
-			  <!--{.section siteTagLine}<p>{@}</p>{.end}-->
-	  
-			{.end}
+<body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+  <button class="menu">
+    <!-- svg -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+       y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+      <g>
+        <path fill="#F08B1D" d="M32.2,37.8h35.6c1.2,0,2.2-1,2.2-2.2s-1-2.2-2.2-2.2H32.2c-1.2,0-2.2,1-2.2,2.2S31,37.8,32.2,37.8z"/>
+        <path fill="#F08B1D" d="M67.8,47.8H32.2c-1.2,0-2.2,1-2.2,2.2c0,1.2,1,2.2,2.2,2.2h35.6c1.2,0,2.2-1,2.2-2.2
+          C70,48.8,69,47.8,67.8,47.8z"/>
+        <path fill="#F08B1D" d="M67.8,62.2H32.2c-1.2,0-2.2,1-2.2,2.2s1,2.2,2.2,2.2h35.6c1.2,0,2.2-1,2.2-2.2S69,62.2,67.8,62.2z"/>
+      </g>
+    </svg>
+    <!-- end -->
+  </button>
 
-	  
-	  		</div>
-		  </header>
- 		  <!--MAIN NAVIGATION-->
-	  	  <squarespace:navigation navigationId="mainNav" template="navigation" />
-		  <!--CONTENT INJECTION POINT-->
-	   
+<header class="app-bar promote-layer header">
+  <div class="app-bar-container">
+
+    {.section website}
+
+      <h1 class="logo">
+        <a href="/">
+          {.section logoImageUrl}
+           <img src="{logoImageUrl}?format=original" alt="{siteTitle}" />
+          {.or}
+          {siteTitle}
+          {.end}
+        </a>
+      </h1>
+
+    {.end}
+
+    <div class="right hidden-mobile">
+      <div class="top">
+        <squarespace:navigation navigationId="appointmentNav" template="appNav" />
+      </div> <!-- .top -->
+      <div class="bottom">
+        <div class="left">
+        {.section website}
+        {.section location}
+          <div class="address">
+          {addressLine1}<br>
+          {addressLine2}
+          </div>
+        {.end}
+        {.end}
+          <div class="social">
+            <ul style="margin: 0; padding: 0;">
+              <li style="display:inline;"><a style="display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="https://www.facebook.com/ButlerPediatricDentistry"></a></li>
+              <li style="display:inline;"><a style="background-position: 24px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="http://instagram.com/butlerpediatricdentistry"></a></li>
+              <!--li style="display:inline;"><a style="background-position: 51px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="#"></a></li-->
+              <li style="display:inline;"><a style="background-position: 136px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="https://twitter.com/ButlerPedDental"></a></li>
+              <li style="display:inline;"><a style="background-position: 108px 0;display: block; float: left;width: 24px; height: 24px; margin-right: 3px;background-image: url(/assets/social.png);" href="http://www.yelp.com/biz/butler-pediatric-dentistry-fullerton"></a></li>
+            </ul>
+
+          </div>
+
+        </div> <!-- .left -->
+        <div class="right">
+          {.section websiteSettings}
+          <div class="phone">
+          P: {contactPhoneNumber}
+          </div>
+          <div class="phone">
+          F: 714.680.9501
+          </div>
+          {.end}
+        </div> <!-- .right -->
+      </div> <!-- .bottom -->
+    </div>  <!-- .right -->
+
+  </div>
+</header>
+
+<!--HEADER-->
+
+<!--MAIN NAVIGATION-->
+<squarespace:navigation navigationId="mainNav" template="navigation" />
+<!--CONTENT INJECTION POINT-->
+
+<main>

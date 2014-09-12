@@ -1,5 +1,5 @@
-
-<nav id="main-navigation" data-content-field="navigation-mainNav">
+<nav class="navdrawer-container promote-layer" id="main-navigation" data-content-field="navigation-mainNav">
+  <h4><img src="images/logo-white.png"></h4>
   <ul>
     {.repeated section items}
 
@@ -37,7 +37,7 @@
                 {.end}
 
               </ul>
-              
+
           {.or}
 
             <!--COLLECTION-->
@@ -57,7 +57,7 @@
           {.end}
 
         </li>
-        
+
     {.end}
   </ul>
 </nav>

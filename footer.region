@@ -6,26 +6,26 @@
 			<div class="left">
 			{.section website}
 				<div class="website-title">{siteTitle}</div>
-				
+
 				{.section location}
 				<div class="address">
 					{addressLine1}<br>
 					{addressLine2}
 				</div>
 				{.end}
-				
+
 			{.end}
 			{.section websiteSettings}
 				<div class="phone">
 				T: {contactPhoneNumber}<br>
 				F: 714.680.9501
 				</div>
-				
+
 				<div class="email">
 				{contactEmail}
 				</div>
-				
-				
+
+
 			{.end}
 			</div>
 			<div class="center">
@@ -45,11 +45,11 @@
 		  </div>
 		</div> <!--.wrapper-->
     </footer>
-
+</main>
     <!--INJECTION POINT FOR TRACKING SCRIPTS AND USER CONTENT FROM THE CODE INJECTION TAB-->
 
     {squarespace-footers}
-	
+
   </body>
 
-</html> 
+</html>
