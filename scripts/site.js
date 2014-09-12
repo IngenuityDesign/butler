@@ -9,10 +9,42 @@
 
 */
 
-Y.use('node', function(Y) {
+Y.use('node', 'event', function(Y) {
 	Y.on('domready', function() {
 
 		// Do stuff here.
+		'use strict';
+
+		var navdrawerContainer = Y.one('.navdrawer-container');
+		var body = Y.one('body');
+
+		var appbarElement = Y.one('.app-bar');
+
+		var menuBtn = Y.one('.menu');
+		var main = Y.one('main');
+
+		function closeMenu() {
+			body.removeClass('open');
+			menuBtn.removeClass('open');
+			appbarElement.removeClass('open');
+			navdrawerContainer.removeClass('open');
+		}
+
+		function toggleMenu() {
+			body.toggleClass('open');
+			menuBtn.toggleClass('open');
+			appbarElement.toggleClass('open');
+			navdrawerContainer.toggleClass('open');
+			navdrawerContainer.addClass('opened');
+		}
+
+		main.on('click', closeMenu);
+		menuBtn.on('click', toggleMenu);
+		navdrawerContainer.on('click', function (e) {
+			if (e.target.nodeName === 'A' || e.target.nodeName === 'LI') {
+				closeMenu();
+			}
+		});
 
 	});
 });
@@ -33,7 +65,7 @@ function getFirstLeftVal( ) {
 }
 window.PAUSED_TIME = 0;
 function moveRightOne( sel ) {
-	
+
 	//get the right border of the box
 	currentTime = new Date().getTime();
 	currentTime = currentTime/15000
@@ -43,35 +75,35 @@ function moveRightOne( sel ) {
 		override = true;
 		//console.log('restarting');
 	}
-	
+
 	if (window.PAUSED_TIME != Math.floor(currentTime) || override == true) {
 		//console.log('should be moving');
 		box = $('#text-main-content .box');
 		o = box.offset();
 		rightPos = o.left + box.outerWidth(false);
-		
+
 		//if right position is the same as left position of an image
 		lef = parseInt($(sel).css("left")) + window.settings.interval;
 		flooredLef = Math.floor(lef);
 		flooredRight = Math.floor(rightPos);
 		flooredCurLef = Math.floor(parseInt($(sel).css('left')));
 //		console.log(Math.abs(flooredLef - flooredRight)+" for " + $(sel).attr('src'));
-		//after the arithmetic 
+		//after the arithmetic
 		if (( Math.abs(flooredLef - flooredRight) < (window.settings.interval*2.1)) && !override) {
 			window.PAUSED_TIME = Math.floor(currentTime);
 			console.log('We are stuck');
-			return;	
+			return;
 		} else if (Math.floor(lef) == Math.floor(rightPos) && override) {
-			window.PAUSED_TIME = 0;	
+			window.PAUSED_TIME = 0;
 		} else {
-				
+
 		}
 //		console.log('lets move');
 		if (lef > $(window).width() + parseInt($(sel).attr('width'))) {
 			$(sel).css('left',  getFirstLeftVal() - (parseInt($(sel).attr('width')) + 10 ));
 		} else $(sel).css('left', flooredLef);
 	} else {
-		//console.log(Math.floor(currentTime));	
+		//console.log(Math.floor(currentTime));
 	}
 }
 
@@ -114,7 +146,7 @@ function placeImage(selector, i) {
 			}
 			console.log(i + ": " + adj );
 			selector.css('left', adj+"px");
-			break;	
+			break;
 	}
 }
 var slideShow = {}
@@ -138,7 +170,7 @@ function repositionImages(fix) {
 				moveRightOne($('.slides img')[i])
 			}, 4000);
 		}
-	});	
+	});
 }
 
 $(function() {
@@ -147,29 +179,29 @@ $(function() {
 		repositionImages(true);
 	});
 	repositionImages(false);
-	
+
 	$.each($('.questions .question'), function(i) {
 		console.log('question '+i);
 		$('.hidden', this).hide();
-		
+
 		$('a', this).click(function() {
 			$(this).parentsUntil('.questions').children('.hidden').slideToggle();
 		});
 	});
-	
+
 	//page specific stuff.
 	//first we want to reformat squarespace forms to be beautiful
 	$('.field-list .title').hide();
 	$.each($('.field-list .field'), function(i) {
 		console.log('in '+i);
 		theInput = $('input', this);
-		
+
 		switch (theInput.attr('type')) {
-			
+
 			case 'checkbox':
-			
+
 			break;
-			
+
 			case 'text':
 				theInput.attr('placeholder', $('label', this).text().trim());
 //				$('label', this).text('');
@@ -177,20 +209,20 @@ $(function() {
 				$(this).append(INPUT);
 				$('label', this).hide();
 				break;
-			
+
 		}
-		
-		
-		
+
+
+
 	});
-	
+
 	ap = function() {
 		newOffset = Math.abs(parseInt($('.big-slideshow').css('left'))) + 800;
 		if ($('.big-slideshow').width() <= newOffset) {
 			$('.big-slideshow').animate({left: 0}, 300);
 		} else $('.big-slideshow').animate({left:'-=800px'}, 300);
-		
-		
+
+
 	}
 	$('.second').hide();
 	$('.second input').val('00');
@@ -199,24 +231,24 @@ $(function() {
 	$.each($('.gallery .wrapper .gallery-slides .gallery-slide-item'), function(i) {
 		//this is the big one
 		bigOne = $('.big-slideshow .slideshow-item')[i];
-		
+
 		$(this).click(function(e) {
 			xOffset = i*800;
-			
+
 			$('.big-slideshow').animate({left:-xOffset+"px"},300);
 			window.clearInterval(window.autoPlay);
 			window.autoPlay = window.setInterval(ap, 5000);
 		});
 	});
-	
+
 	var isSlideshowAutoplaying = true;
-	
+
 	//now make it autoplay in two seconds
-	
+
 	window.setTimeout(function() {
-		
+
 		window.autoPlay = window.setInterval(ap, 5000);
-		
+
 	}, 2000);
-	
+
 });
