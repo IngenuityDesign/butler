@@ -1,23 +1,23 @@
 
-    {.repeated section items}
+{.repeated section items}
 
-        <span class="{.section active} active-link{.end}{.if folderActive} active-folder{.end}">
-		
-            <!--COLLECTION-->
+    <span class="{.section active} active-link{.end}{.if folderActive} active-folder{.end}">
 
-            {.section collection}
-              <a href="{fullUrl}">{navigationTitle}</a>
-            {.end}
+        <!--COLLECTION-->
 
-            <!--EXTERNAL LINK-->
+        {.section collection}
+          <a href="{fullUrl}">{navigationTitle}</a>
+        {.end}
 
-            {.section externalLink}
-              <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                {title}
-              </a>
-            {.end}
+        <!--EXTERNAL LINK-->
+
+        {.section externalLink}
+          <a href="{url}"{.section newWindow} target="_blank"{.end}>
+            {title}
+          </a>
+        {.end}
 
 
-        </span>
-        
-    {.end}
+    </span>
+
+{.end}

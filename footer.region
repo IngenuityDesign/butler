@@ -1,7 +1,8 @@
 </main>
 <!--FOOTER WITH OPEN BLOCK FIELD-->
 
-<footer id="footer">
+<footer id="footer" class="hidden-mobile">
+  <div class="pre-wrapper">
   <div class="wrapper">
   	<div class="left">
   	{.section website}
@@ -44,6 +45,7 @@
   	  <squarespace:navigation navigationId="mainNav" template="navigation-f" />
     </div>
   </div> <!--.wrapper-->
+  </div> <!-- <div class="pre-wrapper"> -->
 </footer>
 
 <!--INJECTION POINT FOR TRACKING SCRIPTS AND USER CONTENT FROM THE CODE INJECTION TAB-->

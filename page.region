@@ -1,4 +1,5 @@
-<section id="content" class="page page-{.section collection}{id}{.end} page-{.section collection}{title}{.end}">
+{.section collection}
+<section id="content" class="page page-{id} page-{title} page-{typeName}">
 		  
 	<div class="wrapper mainWrapper">  
 		
@@ -12,10 +13,9 @@
 		</figure>
 		{.end}{.end}
 
-
-		<article id="main-content"{.section collection}{.main-image?} class="hasThumbnail"{.end}{.end}>{squarespace.main-content}</article>
-		
+		<article id="main-content" class="{.main-image?}hasThumbnail{.end}">{squarespace.main-content}</article>
 
 	</div><!--.wrapper-->
 
 </section> <!-- #content -->
+{.end}

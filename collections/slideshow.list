@@ -1,4 +1,4 @@
-<section>
+<section class="hidden-mobile">
 	<div class="inner-wrapper">
 		<div class="slides">
 			{.repeated section items}
@@ -35,3 +35,63 @@
 	</div><!--.wrapper-->
 
 </section> <!-- #content -->
+<section class="hidden-desktop">
+    <nav class="subnavigation">
+          <ul class="button-list">
+            <li><a href="#" class="home">
+              <div class="inner">
+                <span class="label">Home</span>
+              </div>
+            </a></li>
+            <li><a href="#" class="schedule">
+              <div class="inner">
+                <span class="label">Schedule</span>
+              </div>
+            </a></li>
+            <li><a href="#" class="contact">
+              <div class="inner">
+                <span class="label">Contact</span>
+              </div>
+            </a></li>
+            <li><a href="#" class="tours">
+              <div class="inner">
+                <span class="label">Office Tour</span>
+              </div>
+            </a></li>
+          </ul>
+        </nav>
+
+        <header class="jumbotron promote">
+          <img src="/assets/girl-front.png" alt="" style="width:100%; height: auto; display: block; position: relative;">
+        </header>
+
+        <nav class="big-buttons">
+          <ul class="inline-list clearfix">
+            <li><a href="#">
+
+              <figure class="thumbnail">
+                <img src="/assets/doctors.png" alt="">
+                <figcaption>Meet our Doctors</figcaption>
+              </figure>
+
+            </a></li>
+            <li><a href="#">
+
+              <figure class="thumbnail">
+                <img src="/assets/what-sets-us-apart.png" alt="">
+                <figcaption>What Sets Us Apart</figcaption>
+              </figure>
+
+            </a></li>
+          </ul>
+        </nav>
+
+        <nav class="med-buttons">
+          <ul class="inline-list clearfix">
+            <li><a href="#" style="background-image: url('/assets/first-visit.png')">First Visit</a></li>
+            <li><a href="#" style="background-image: url('/assets/forms.png')">Forms</a></li>
+            <li><a href="#" style="background-image: url('/assets/philosophy.png')">Philosophy</a></li>
+            <li><a href="#" style="background-image: url('/assets/insurance.png')">Ins. Info</a></li>
+          </ul>
+        </nav>
+</section>
