@@ -1,5 +1,5 @@
 {.section collection}
-<section id="content" class="page page-{id} page-{title} page-{typeName}">
+<section id="content" class="page page-{id} page-{title} page-{typeName} {typeName}">
 		  
 	<div class="wrapper mainWrapper">  
 		

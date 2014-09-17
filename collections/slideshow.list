@@ -1,4 +1,4 @@
-<section class="hidden-mobile">
+<section class="hidden-mobile slideshow ">
 	<div class="inner-wrapper">
 		<div class="slides">
 			{.repeated section items}
