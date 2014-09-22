@@ -17,7 +17,7 @@
 			<div class="bottom"></div>
 		</div>
 </section>
-<section id="content" class="home">
+<section id="content" class="home hidden-mobile">
 		  
 	<div class="wrapper">
 		<div class="sub-inner-wrapper">
@@ -36,30 +36,6 @@
 
 </section> <!-- #content -->
 <section class="hidden-desktop">
-    <nav class="subnavigation">
-          <ul class="button-list">
-            <li><a href="#" class="home">
-              <div class="inner">
-                <span class="label">Home</span>
-              </div>
-            </a></li>
-            <li><a href="#" class="schedule">
-              <div class="inner">
-                <span class="label">Schedule</span>
-              </div>
-            </a></li>
-            <li><a href="#" class="contact">
-              <div class="inner">
-                <span class="label">Contact</span>
-              </div>
-            </a></li>
-            <li><a href="#" class="tours">
-              <div class="inner">
-                <span class="label">Office Tour</span>
-              </div>
-            </a></li>
-          </ul>
-        </nav>
 
         <header class="jumbotron promote">
           <img src="/assets/girl-front.png" alt="" style="width:100%; height: auto; display: block; position: relative;">
