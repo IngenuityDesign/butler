@@ -1,21 +1,21 @@
 {.section collection}
 <section id="content" class="page page-{id} page-{title} page-{typeName} {typeName}">
 
+    <div class="hidden-desktop">
+        <squarespace:navigation navigationId="mobileNav" template="mobileSubmenu" />
+        {.main-image?}
+        <header class="jumbotron promote">
+            <img src="{fullURL}?format=312w" alt="" style="width:100%; height: auto; display: block; position: relative;">
+        </header>
+        {.end}
+
+    </div>
+
+
+
 	<div class="wrapper mainWrapper">
 
-        <div class="hidden-desktop">
-            <squarespace:navigation navigationId="submenu-nav" template="mobileSubmenu" />
-        </nav>
-
-		<div class="title"><h1>{.section collection}{title}{.end}</h1></div>
-		
-
-		{.section collection}
-		{.main-image?}
-		<figure>
-			<img src="{fullURL}?format=312w" />
-		</figure>
-		{.end}{.end}
+		<div class="title"><h1>{title}</h1></div>
 
 		<article id="main-content" class="{.main-image?}hasThumbnail{.end}">{squarespace.main-content}</article>
 

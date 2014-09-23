@@ -6,6 +6,8 @@
 @orange: #f08b1d;
 @white: #ffffff;
 @lightorange: #eead67;
+@breakpoint: 900px;
+@breakpoint-min: 899px;
 
 /* MOBILE FIRST
 -------------------------------------------------*/
@@ -181,16 +183,25 @@ h1, h2, p {
 
 h1 {
   color: @orange;
-  font-size: 48px;
+  font-size: 30px;
   text-transform: uppercase;
-  line-height: 55px;
+  line-height: 1em;
   font-weight: 300;
   padding-bottom: 22px;
+  margin-top: 20px;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 300;
+}
+
+@media (min-width: @breakpoint) {
+  h1 {
+    margin-top: 0;
+    font-size: 48px;
+    line-height: 55px;
+  }
 }
 
 .mainWrapper div.title {
@@ -208,18 +219,71 @@ h2 a {
   background-repeat: no-repeat;
   background-image: url(/assets/file.png);
   display: block;
-  width: 150px;
-  height: auto;
   padding-top: 0px;
   font-size: 1.1em;
   color: white;
   text-transform: uppercase;
-  padding-left: 70px;
   background-position: left top;
   min-height: 100px;
   text-decoration: none;
-  float: left;
-  margin-right: 30px;
+  padding-left: 70px;
+
+}
+
+.page article {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.form-wrapper .field-list .description {
+  display: block;
+}
+
+.form-wrapper input[type="submit"] {
+  width: 100%;
+}
+
+.slideshow article {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mainWrapper {
+  h1 {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: @breakpoint) {
+  .form-wrapper input[type="submit"] {
+    width: auto;
+  }
+  .form-wrapper .field-list .description {
+    display: inline-block;
+  }
+  .page-Forms article {
+    a {
+      width: 150px;
+
+      height: auto;
+      float: left;
+      margin-right: 30px;
+    }
+
+  }
+
+  .page article aside a {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .mainWrapper h1 {
+    padding-left: 0;
+  }
+}
+
+body #content.page article {
+  color: white;
 }
 
 body #content.page-New.Patient.Specials article {
@@ -260,7 +324,7 @@ main {
   min-height: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: @breakpoint) {
 
   main {
     padding-top: 0;
@@ -469,7 +533,6 @@ main {
       &.hasThumbnail {
         padding-right: 400px;
       }
-      color: white;
       h1, h2 {
         .clearSpacing();
         margin-bottom: 25px;
@@ -481,14 +544,6 @@ main {
       li, p {
         font-size: 14px;
         line-height: 19px;
-      }
-      h1 {
-        color: @orange;
-        font-size: 48px;
-        text-transform: uppercase;
-        line-height: 55px;
-        font-weight: 300;
-        margin-bottom: 22px;
       }
 
       h2 {
@@ -528,7 +583,7 @@ main {
         left: 50%;
         padding: 10px 20px 10px;
         position: absolute;
-        height: 250px;
+        height: 290px;
         background-repeat: no-repeat;
         /*					background-image: url(/assets/background-home.png);*/
         background-color: white;
@@ -555,14 +610,24 @@ main {
 
     &.gallery {
 
+
+
       .wrapper {
 
+
+
         #text-main-content {
-          width: 800px;
-          height: 425px;
-          background-color: black;
-          overflow: hidden;
+
+          @media (min-width: @breakpoint) {
+            width: 800px;
+            height: 425px;
+            background-color: black;
+            overflow: hidden;
+          }
+
+
           position: relative;
+
           .big-slideshow {
             width: 100%;
             position: absolute;
@@ -570,9 +635,11 @@ main {
             right: 0;
             top: 0;
             .slideshow-item {
+              /* unfortunately since we have to use importants, we need to do max width query */
               float: left;
             }
           }
+
         }
 
         .gallery-slides {
@@ -725,3 +792,28 @@ main {
 }
 
 h3 {margin-bottom: 14px; margin-top: 0;}
+
+@media (max-width: @breakpoint-min) {
+  .page-tour #main-content {
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+  .gallery-slides {
+    display: none !important;
+  }
+  .big-slideshow {
+    width: 100% !important;
+    height: auto !important;
+    top: auto !important;
+    left: auto !important;
+    .slideshow-item {
+      float: none !important;
+      width: 100% !important;
+      height: 255px !important;
+      background-color: black;
+      background-size: contain;
+      margin-bottom: 2px;
+    }
+  }
+}

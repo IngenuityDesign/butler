@@ -1,21 +1,21 @@
 <nav class="subnavigation">
     <ul class="button-list">
-        <li><a href="#" class="home">
+        <li><a href="/" class="home">
             <div class="inner">
                 <span class="label">Home</span>
             </div>
         </a></li>
-        <li><a href="#" class="schedule">
+        <li><a href="/scheduling-information/" class="schedule">
             <div class="inner">
                 <span class="label">Schedule</span>
             </div>
         </a></li>
-        <li><a href="#" class="contact">
+        <li><a href="/feedback/" class="contact">
             <div class="inner">
                 <span class="label">Contact</span>
             </div>
         </a></li>
-        <li><a href="#" class="tours">
+        <li><a href="/office-tour/" class="tours">
             <div class="inner">
                 <span class="label">Office Tour</span>
             </div>

@@ -1,10 +1,10 @@
 <section id="content" class="page page-{.section collection}{id}{.end} {.section collection}{typeLabel}{.end}">
-		  
-	<div class="wrapper mainWrapper">
 
-        <div class="hidden-desktop">
-            <squarespace:navigation navigationId="submenu-nav" template="mobileSubmenu" />
-        </nav>
+    <div class="hidden-desktop">
+        <squarespace:navigation navigationId="submenu-nav" template="mobileSubmenu" />
+    </div>
+
+	<div class="wrapper mainWrapper">
 
 		<article id="main-content" class="page">{squarespace.main-content}</article>
 

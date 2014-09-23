@@ -2,7 +2,7 @@
 <!--FOOTER WITH OPEN BLOCK FIELD-->
 
 <footer id="footer" class="hidden-mobile">
-  <div class="pre-wrapper">
+  <div class="pre-wrapper clearfix">
   <div class="wrapper">
   	<div class="left">
   	{.section website}
