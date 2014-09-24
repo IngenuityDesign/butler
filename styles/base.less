@@ -806,6 +806,15 @@ h3 {margin-bottom: 14px; margin-top: 0;}
 
 @media (max-width: @breakpoint-min) {
 
+  .embed-block {
+    iframe,object {
+      max-width: 100%;
+    }
+  }
+
+  article {
+    word-wrap: break-word;
+  }
   .page-tour #content {
     padding-top: 0px !important;
   }
@@ -835,8 +844,10 @@ h3 {margin-bottom: 14px; margin-top: 0;}
 
 
   .page-Meet {
-    .title {
+    .title, .title h1 {
       text-align: center;
+      padding-left:0 !important;
+      margin-left:0;
     }
     article {
       padding-left:0;
