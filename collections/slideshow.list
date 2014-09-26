@@ -65,7 +65,7 @@
         <nav class="med-buttons">
           <ul class="inline-list clearfix">
             <li><a href="/first-visit/" style="background-image: url('/assets/first-visit.png')">First Visit</a></li>
-            <li><a href="/forms/" style="background-image: url('/assets/forms.png')">Forms</a></li>
+            <li><a href="/meet-our-team/" style="background-image: url('/assets/team.png')">Team</a></li>
             <li><a href="/our-philosophy/" style="background-image: url('/assets/philosophy.png')">Philosophy</a></li>
             <li><a href="/financial-information/" style="background-image: url('/assets/insurance.png')">Ins. Info</a></li>
           </ul>
